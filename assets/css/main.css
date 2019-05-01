@@ -3263,8 +3263,8 @@ input, select, textarea {
 			-ms-flex-shrink: 1;
 			flex-shrink: 1;
 			border: 0;
-			margin-top: 1em;
-			max-width: 19em;
+			padding-top: 1rem;
+			max-width: 18em;
 			height: auto;
 			white-space: nowrap;
 		}
@@ -3275,7 +3275,6 @@ input, select, textarea {
 
 		#header a[href="#navPanel"] {
 			text-decoration: none;
-			background: #3b459f;
 			color: #000;
 			display: none;
 			padding: 0 1.25em;
@@ -3432,7 +3431,7 @@ input, select, textarea {
 		}
 
 		#header {
-			height: 44px;
+			height: 5em;
 			line-height: 44px;
 		}
 
