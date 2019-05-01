@@ -2,9 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i");
 
 /*
-	Apex by Pixelarity
-	pixelarity.com | hello@pixelarity.com
-	License: pixelarity.com/license
+	Lapel Pins and Coins
 */
 
 html, body, div, span, applet, object,
@@ -36,6 +34,15 @@ body {
 	max-width: 10em;
 }
 
+.recent{
+	max-width: 110px;
+	height: auto;
+}
+.mainpic {
+	border-radius: 6px;
+	max-width: 19em;
+	height: auto;
+}
 ol, ul {
 	list-style: none;
 }
@@ -1868,7 +1875,7 @@ input, select, textarea {
 		-ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
 		border: 0;
-		border-radius: 0;
+		border-radius: 12px;
 		cursor: pointer;
 		display: inline-block;
 		font-weight: 300;
