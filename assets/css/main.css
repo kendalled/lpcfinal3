@@ -1,5 +1,5 @@
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i");
 
 /*
 	Lapel Pins and Coins
@@ -159,7 +159,7 @@ input, select, textarea {
 	}
 
 	body, input, select, textarea {
-		font-family: "Open Sans", Arial, Helvetica, sans-serif;
+		font-family: "Lato", Arial, Helvetica, sans-serif;
 		font-weight: 300;
 		font-size: 1rem;
 		line-height: 1.65;
