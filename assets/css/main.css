@@ -3529,7 +3529,7 @@ input, select, textarea {
 			display: none;
 		}
 
-		#header a[href="#navPanel"] {
+		#header a[href="#navPanel" title="Toggles Navigation Panel"] {
 			display: block;
 		}
 
