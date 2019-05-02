@@ -38,6 +38,40 @@ body {
 	max-width: 110px;
 	height: auto;
 }
+.file-input-wrapper {
+	 display: inline-block;
+	 overflow-y: hidden;
+}
+ .file-input-wrapper .file-input-button {
+	 color: white;
+	 line-height: 1.2;
+	 border-radius: 6px;
+	 padding: 1em .5em 1.5em 1em;
+	 background: #002d5d;
+	 box-sizing: border-box;
+	 font-family: sans-serif;
+	 width: 10em;
+	 height: 3em;
+	 display: inline;
+	 display: inline-block;
+	 font-size: 15px;
+	 font-weight: 400;
+	 text-align: center;
+	 transition: color 500ms, background-color 500ms;
+	 -moz-transition: color 500ms, background-color 500ms;
+	 -webkit-transition: color 500ms, background-color 500ms;
+	 -o-transition: color 500ms, background-color 500ms;
+	 -ie-transition: color 500ms, background-color 500ms;
+	 cursor: pointer;
+}
+ .file-input-wrapper .file-input-button:hover {
+	 color: #000000;
+	 background: #ccc;
+	 text-decoration: none;
+}
+ .file-input-wrapper input {
+	 display: none;
+}
 .mainpic {
 	border-radius: 6px;
 	max-width: 19em;
@@ -2089,6 +2123,7 @@ input, select, textarea {
 	input[type="tel"],
 	input[type="search"],
 	input[type="url"],
+	input[type="phone"],
 	select,
 	textarea {
 		-moz-appearance: none;
