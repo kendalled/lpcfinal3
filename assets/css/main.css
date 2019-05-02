@@ -1,5 +1,6 @@
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Lato")
+@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i");
+
 /*
 	Lapel Pins and Coins
 */
@@ -132,7 +133,9 @@ body {
 	justify-content: center;
 	text-align: center;
 }
-
+.vidcard:hover {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
 ol, ul {
 	list-style: none;
 }
