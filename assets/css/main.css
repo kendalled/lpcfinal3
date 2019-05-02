@@ -2895,9 +2895,9 @@ input, select, textarea {
 			}
 
 		.features > a.accent1 {
-			background: #002d5d;
-						border-radius: 10px;
-						margin-bottom: 1em;
+			background: linear-gradient(#1ea5ff, #002d5d);
+			border-radius: 10px;
+			margin-bottom: 1em;
 		}
 
 			.features > a.accent1:hover {
@@ -2905,22 +2905,23 @@ input, select, textarea {
 			}
 
 		.features > a.accent2 {
-				background: #ff9e18;
-							border-radius: 10px;
-							margin-bottom: 1em;
+				background: linear-gradient(#ef6c00, #ff9e18);
+				border-radius: 10px;
+				margin-bottom: 1em;
+
 		}
 
 			.features > a.accent2:hover {
-				background: #EF6C00;
+				background: linear-gradient(#ff9e18, #ff9e18);
 			}
 
 		.features > a.accent3 {
-			background: #41494e;
-						border-radius: 10px;
+			background: linear-gradient(#41494e, #1f1f1f);
+			border-radius: 10px;
 		}
 
 			.features > a.accent3:hover {
-				background: #4d565c;
+				background: #1f1f1f;
 			}
 
 		.features > a.alt {
