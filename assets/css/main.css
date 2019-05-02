@@ -2801,10 +2801,10 @@ input, select, textarea {
 /* Features */
 
 	.features > a {
-		-moz-transition: background-color 0.2s ease-in-out;
-		-webkit-transition: background-color 0.2s ease-in-out;
-		-ms-transition: background-color 0.2s ease-in-out;
-		transition: background-color 0.2s ease-in-out;
+		-moz-transition: .4s all;
+		-webkit-transition: .4s all;
+		-ms-transition: .4s all;
+		transition: .4s all;
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -2901,7 +2901,12 @@ input, select, textarea {
 		}
 
 			.features > a.accent1:hover {
-				background: #1ea5ff;
+				transform: scale(1.05);
+				-webkit-transform: scale(1.05);
+				-moz-transform: scale(1.05);
+				-o-transform: scale(1.05);
+				-ms-transform: scale(1.05);
+				z-index: 1;
 			}
 
 		.features > a.accent2 {
@@ -2911,18 +2916,28 @@ input, select, textarea {
 
 		}
 
-			.features > a.accent2:hover {
-				background: linear-gradient(#ff9e18, #ff9e18);
-			}
+		.features > a.accent2:hover {
+			transform: scale(1.05);
+			-webkit-transform: scale(1.05);
+			-moz-transform: scale(1.05);
+			-o-transform: scale(1.05);
+			-ms-transform: scale(1.05);
+			z-index: 1;
+		}
 
 		.features > a.accent3 {
 			background: linear-gradient(#41494e, #1f1f1f);
 			border-radius: 10px;
 		}
 
-			.features > a.accent3:hover {
-				background: #1f1f1f;
-			}
+		.features > a.accent3:hover {
+			transform: scale(1.05);
+			-webkit-transform: scale(1.05);
+			-moz-transform: scale(1.05);
+			-o-transform: scale(1.05);
+			-ms-transform: scale(1.05);
+			z-index: 1;
+		}
 
 		.features > a.alt {
 			background: #002d5d;
