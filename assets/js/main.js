@@ -1,7 +1,5 @@
 /*
-	Apex by Pixelarity
-	pixelarity.com | hello@pixelarity.com
-	License: pixelarity.com/license
+	Lapel Pins & Coins
 */
 
 var settings = {
@@ -202,7 +200,7 @@ $.fn._slider = function(options) {
 	// Nav Panel.
 
 		// Toggle.
-			$('<a href="#navPanel" class="navPanelToggle"><span class="label">Menu</span></a>')
+			$('<a href="#navPanel" title="Toggles Navigation Menu" class="navPanelToggle"><span class="label">Toggles Navigation Menu</span></a>')
 				.appendTo($header);
 
 		// Panel.
