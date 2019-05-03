@@ -33,7 +33,14 @@ body {
 .stepimages {
 	max-width: 10em;
 }
-
+#quoteform {
+	box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  border-radius: 6px;
+  background-color: #f7f7f7;
+  padding: 3em;
+  max-width: 60em;
+  height: auto;
+}
 .recent{
 	max-width: 110px;
 	height: auto;
@@ -128,14 +135,12 @@ body {
 	padding: 2em;
 	height: 32rem;
 
-	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 	justify-content: center;
 	text-align: center;
 }
-.vidcard:hover {
-	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
+
 ol, ul {
 	list-style: none;
 }
@@ -2130,7 +2135,7 @@ input, select, textarea {
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		border-radius: 0;
+		border-radius: 6px;
 		border: none;
 		border: solid 1px;
 		color: inherit;
@@ -2910,7 +2915,7 @@ input, select, textarea {
 			}
 
 		.features > a.accent2 {
-				background: linear-gradient(#ef6c00, #ff9e18);
+				background: linear-gradient(#ff9e18, #ef6c00);
 				border-radius: 10px;
 				margin-bottom: 1em;
 
@@ -2926,7 +2931,7 @@ input, select, textarea {
 		}
 
 		.features > a.accent3 {
-			background: linear-gradient(#41494e, #1f1f1f);
+			background: linear-gradient(#6e6e6e, #2a2a2a);
 			border-radius: 10px;
 		}
 
@@ -2940,7 +2945,7 @@ input, select, textarea {
 		}
 
 		.features > a.alt {
-			background: #002d5d;
+			background: linear-gradient(#1ea5ff, #002d5d);
 			padding: 3rem;
 			width: 47rem;
 		}
