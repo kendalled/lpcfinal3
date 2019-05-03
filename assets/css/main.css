@@ -3919,10 +3919,10 @@ input, select, textarea {
 		}
 
 			#banner > article:before {
-				-moz-transition: opacity 1.25s ease-in-out;
-				-webkit-transition: opacity 1.25s ease-in-out;
-				-ms-transition: opacity 1.25s ease-in-out;
-				transition: opacity 1.25s ease-in-out;
+				-moz-transition: opacity 1.1s ease-in-out;
+				-webkit-transition: opacity 1.1s ease-in-out;
+				-ms-transition: opacity 1.1s ease-in-out;
+				transition: opacity 1.1s ease-in-out;
 				background-color: #41494e;
 				content: '';
 				height: 100%;
