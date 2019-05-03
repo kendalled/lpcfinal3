@@ -41,6 +41,21 @@ body {
   max-width: 60em;
   height: auto;
 }
+.ordering span {
+	background-color: #002d5d;
+	border-radius: 100%;
+	color: #fff;
+	font-size: 2.4rem;
+	padding: .25rem 1rem .35rem 1rem;
+}
+.ordering:hover span {
+	background-color: #ff9e18;
+	transition: background-color .4s ease-in-out;
+}
+
+.ordering h3{
+	font-weight: 400;
+}
 .recent{
 	max-width: 110px;
 	height: auto;
@@ -3532,6 +3547,20 @@ input, select, textarea {
 						border-radius: 12px;
 						font-weight: 550;
 					}
+
+					#header nav > ul > li:last-child a {
+						background: #002d5d;
+						color: #fff;
+						transition: background-color .3s ease-in-out;
+						-moz-transition: background-color .3s ease-in-out;
+						-ms-transition: background-color .3s ease-in-out;
+						-webkit-transition: background-color .3s ease-in-out;
+					}
+					#header nav > ul > li:last-child a:hover {
+						background: #ff9e18;
+						color: #fff;
+					}
+					/*yaha*/
 
 						#header nav > ul > li a:hover, #header nav > ul > li a:focus {
 							color: #ff9e18;
