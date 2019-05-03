@@ -2944,9 +2944,11 @@ input, select, textarea {
 		}
 
 		.features > a.alt {
-			background: #002d5d;
+			background: linear-gradient(#ff9e18, #ef6c00);
 			padding: 3rem;
-			width: 47rem;
+			width: 45rem;
+			box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
 		}
 
 			.features > a.alt h2 {
