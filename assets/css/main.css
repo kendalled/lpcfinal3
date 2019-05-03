@@ -2966,6 +2966,63 @@ input, select, textarea {
 				width: 4.5rem;
 			}
 
+			/* Alt 2 */
+			.features > a.alt2 {
+			  background: linear-gradient(#1ea5ff, #002d5d);
+			  padding: 3rem;
+			  width: 45rem;
+			  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+			}
+
+			  .features > a.alt2 h2 {
+			    font-size: 3rem;
+			  }
+
+			  .features > a.alt2 p {
+			    font-size: 1.25rem;
+			    width: calc(100% - 6rem);
+			  }
+
+			  .features > a.alt2:after {
+			    font-size: 4.5rem;
+			    line-height: 1;
+			    width: 4.5rem;
+			  }
+				@media screen and (max-width: 736px) {
+
+				  .features > a.alt2 {
+				    padding: 2rem;
+				    width: 100%;
+				  }
+
+				    .features > a.alt2 h2 {
+				      font-size: 2.5rem;
+				    }
+
+				    .features > a.alt2 p {
+				      font-size: 1rem;
+				    }
+
+				    .features > a.alt2:after {
+				      font-size: 3.5rem;
+				      text-align: right;
+				    }
+
+				}
+
+				@media screen and (max-width: 480px) {
+
+				  .features > a.alt2 h2 {
+				    font-size: 2rem;
+				  }
+
+				  .features > a.alt2:after {
+				    display: none;
+				  }
+
+				}
+				/* end alt2 */
 			@media screen and (max-width: 736px) {
 
 				.features > a.alt {
