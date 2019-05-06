@@ -33,6 +33,90 @@ body {
 .stepimages {
 	max-width: 10em;
 }
+.clogo {
+	width: 300px;
+}
+.testimonial {
+	background: linear-gradient(#ff9e18, #ef6c00);
+	max-width: 100%;
+	border-radius: 10px;
+	padding: 2em;
+	margin: 2rem auto;
+	justify-content: center;
+}
+@media screen and (max-width: 720px){
+	.testimonial {
+		padding: 1.2em;
+	}
+}
+.testimonial h3 {
+	text-align: center;
+	color: #fff;
+}
+
+.testimonial blockquote b{
+	color: #fff;
+}
+.customer-logo-link {
+	display: block;
+	padding: 2.5rem 2.5rem 1.5rem 2rem;
+	background-color: #fff;
+	border-radius: 10px;
+}
+.customer-logo-link:hover .buttonC {
+	opacity: 1;
+	transform: translate(-21rem, .1em);
+}
+.customer-logo-link:hover .list {
+	opacity: 0.7;
+	transform: scale(0.95);
+	filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><f…ter id="filter"><feGaussianBlur stdDeviation="10" /></filter></svg>#filter');
+	filter: blur(10px);
+}
+.buttonC {
+	white-space: nowrap;
+	display: inline-block;
+	height: 40px;
+	line-height: 40px;
+	padding: 0 14px;
+	box-shadow: 0 4px 6px rgba(50, 50, 93, .11), 0 1px 3px rgba(0, 0, 0, .08);
+	border-radius: 6px;
+	font-size: 15px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #fff;
+	background: #002d5d;
+	text-decoration: none;
+	transition: all 0.2s ease;
+	position: absolute;
+	z-index: 1;
+	left: 50%;
+
+	transform: translate(-50%, 5px) scale(0.95);
+	opacity: 0;
+	transition: 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+
+}
+.list {
+	list-style: none;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	justify-content: space-between;
+	transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
+	will-change: transform;
+	filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feGaussianBlur stdDeviation="0" /></filter></svg>#filter');
+	filter: blur(0);
+}
+.list li {
+	margin: 0 13px;
+}
+.list img {
+	height: 1.75rem;
+	vertical-align: middle;
+}
 #quoteform {
 	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
   border-radius: 6px;
@@ -3805,7 +3889,7 @@ input, select, textarea {
 		-ms-align-items: -ms-flex-end;
 		align-items: flex-end;
 		cursor: default;
-		height: 40rem;
+		height: 45rem;
 		position: relative;
 	}
 
