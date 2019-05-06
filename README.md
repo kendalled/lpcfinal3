@@ -3,6 +3,8 @@
 
 This site aims to have a 3.0s or lower TTI (Time to interactive) -  
    as well as score extremely well in lighthouse and Google Rankings.
+   
+Successor to: lpcfinal, lpcfinal2, LapelV2
 # Features:
 - HTML5
 - CSS3
