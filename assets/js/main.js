@@ -110,7 +110,6 @@ $.fn._slider = function(options) {
 
 				// Slide.
 					$slide
-						.css("background-size", "contain")
 						.css('background-image', 'url("' + $img.attr('src') + '")')
 						.css('background-position', ($slide.data('position') ? $slide.data('position') : 'center'));
 
