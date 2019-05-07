@@ -137,6 +137,8 @@ $.fn._slider = function(options) {
 
 			});
 
+
+
 	// Initial slide.
 		slides[pos].addClass('visible').addClass('top');
 
@@ -214,5 +216,6 @@ $.fn._slider = function(options) {
 					resetForms: true,
 					side: 'right'
 				});
+				
 
 })(jQuery);
