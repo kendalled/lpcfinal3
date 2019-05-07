@@ -216,6 +216,6 @@ $.fn._slider = function(options) {
 					resetForms: true,
 					side: 'right'
 				});
-				
+
 
 })(jQuery);
