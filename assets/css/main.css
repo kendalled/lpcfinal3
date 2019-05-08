@@ -37,6 +37,11 @@ body {
 	width: 17rem;
 	height: auto;
 }
+@media screen and (max-width: 600px) {
+	#designs {
+		display: none;
+	}
+}
 .clogo {
 	width: 300px;
 }
