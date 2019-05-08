@@ -4247,9 +4247,10 @@ input, select, textarea {
 			width: 100%;
 			z-index: 0;
 			background-attachment: fixed, fixed;
-			min-height: calc(25vh + 7rem);
+			min-height: calc(35vh + 7rem);
 
 		}
+
 		/*Custom Banner*/
 		#banner > article:after {
 		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1900' height='150' viewBox='0 0 1900 150' preserveAspectRatio='none'%3E%3Cpath d='M0,25.7C243.4,84,596.7,150,950,150c353.3,0,706.6-66,950-124.3V150H0V25.7z' fill='%23f1f1f1'/%3E%3C/svg%3E");
@@ -4295,6 +4296,7 @@ input, select, textarea {
 		padding: 8rem 2rem 6rem 2rem;
 		min-height: 0;
 	}
+	
 }
 @media screen and (max-width: 480px) {
 	#banner {
