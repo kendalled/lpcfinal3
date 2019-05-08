@@ -41,6 +41,10 @@ body {
 	#designs {
 		display: none;
 	}
+
+	.sizing {
+		width: 90vw;
+	}
 }
 .clogo {
 	width: 300px;
@@ -365,7 +369,7 @@ body.is-preload #banner2 > .content {
 }
 @media screen and (max-width: 480px) {
 	#banner2 {
-		padding: 10rem 2rem 8rem 2rem;
+		padding: 3rem 2rem 5rem 2rem;
 	}
 }
 @media screen and (max-width: 480px) {
@@ -3429,7 +3433,7 @@ input, select, textarea {
 
 		.mini-posts article:last-of-type {
 			border: none;
-			padding-bottom: 0;
+			padding-bottom: 3rem;
 		}
 
 		.mini-posts article a {
@@ -3446,7 +3450,7 @@ input, select, textarea {
 		}
 
 		.mini-posts article > .content > :last-child {
-			margin-bottom: 0;
+			margin-bottom: 0rem;
 		}
 
 	.mini-posts.small article {
