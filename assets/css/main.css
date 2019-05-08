@@ -3273,7 +3273,6 @@ input, select, textarea {
 		.features > a.accent3 {
 			background: linear-gradient(#6e6e6e, #2a2a2a);
 			border-radius: 10px;
-			margin-bottom: 5.8rem;
 		}
 
 		.features > a.accent3:hover {
@@ -4247,7 +4246,7 @@ input, select, textarea {
 			width: 100%;
 			z-index: 0;
 			background-attachment: fixed, fixed;
-			min-height: calc(35vh + 7rem);
+			min-height: calc(40vh + 7rem);
 
 		}
 
@@ -4284,6 +4283,7 @@ input, select, textarea {
 	#banner {
 		padding: 7.5rem 0 5.5rem 0;
 		background-attachment: scroll, scroll;
+		display: none;
 	}
 }
 @media screen and (max-width: 980px) {
@@ -4296,7 +4296,7 @@ input, select, textarea {
 		padding: 8rem 2rem 6rem 2rem;
 		min-height: 0;
 	}
-	
+
 }
 @media screen and (max-width: 480px) {
 	#banner {
