@@ -171,7 +171,7 @@ body {
 	background-position: left, top;
 	background-repeat: repeat, no-repeat;
 	background-size: auto, contain;
-	min-height: calc(15vh + 7rem);
+	min-height: calc(25vh + 7rem);
 	position: relative;
 	text-align: center;
 }
@@ -314,10 +314,10 @@ body {
 	width: 100%;
 }
 #banner2 > .content {
-	-moz-transition: -moz-transform 1s ease-in-out, opacity 1.25s ease-in-out;
-	-webkit-transition: -webkit-transform 1s ease-in-out, opacity 1.25s ease-in-out;
-	-ms-transition: -ms-transform 1s ease-in-out, opacity 1.25s ease-in-out;
-	transition: transform 1s ease-in-out, opacity 1.25s ease-in-out;
+	-moz-transition: -moz-transform .5s ease-in-out, opacity .5s ease-in-out;
+	-webkit-transition: -webkit-transform .5s ease-in-out, opacity .5s ease-in-out;
+	-ms-transition: -ms-transform .5s ease-in-out, opacity .5s ease-in-out;
+	transition: transform .5s ease-in-out, opacity .5s ease-in-out;
 	position: relative;
 	z-index: 1;
 }
@@ -4236,7 +4236,7 @@ input, select, textarea {
 			z-index: 0;
 			background-attachment: fixed, fixed;
 			min-height: calc(25vh + 7rem);
-		
+
 		}
 		/*Custom Banner*/
 		#banner > article:after {
