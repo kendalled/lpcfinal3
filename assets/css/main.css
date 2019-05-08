@@ -3854,11 +3854,6 @@ input, select, textarea {
 
 					}
 
-					#header nav > ul > li:hover a {
-						/*background-color: #002d5d;*/
-
-					}
-
 					#header nav > ul > li > ul {
 						display: none;
 					}
