@@ -33,6 +33,43 @@ body {
 .stepimages {
 	max-width: 7rem;
 }
+ul.check {
+	list-style: none;
+	padding-left: 0;
+}
+
+ul.check li {
+	text-decoration: none;
+	padding: 0 0 2em 3em;
+	position: relative;
+}
+
+ul.check li:before {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-family: FontAwesome;
+	font-style: normal;
+	font-weight: normal;
+	text-transform: none !important;
+}
+
+ul.check li:before {
+	color: #00b47b;
+	content: '\f00c';
+	display: block;
+	font-size: 2.2em;
+	left: 0;
+	position: absolute;
+}
+
+ul.check li:last-child {
+	padding-bottom: 0;
+}
+
+ul.check li>div {
+	padding-top: 1em;
+	font-size: 1.1rem;
+}
 .productpage {
 	width: 17rem;
 	height: auto;
@@ -4213,7 +4250,7 @@ a.icon.alt2:hover:before {
 				#banner input[type="button"],
 				#banner button,
 				#banner .button {
-					background: linear-gradient(45deg,#1ea5ff, #002d5d);
+					background: linear-gradient(15deg,#002d5d, #1ea5ff) !important;
 					color: #ffffff !important;
 					-moz-transition: .3s all;
 					-webkit-transition: .3s all;
