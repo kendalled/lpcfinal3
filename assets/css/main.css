@@ -81,10 +81,14 @@ ul.check li>div {
 	#designs {
 		display: none;
 	}
+	#sizing {
+		display: none;
+	}
 }
 .sizing {
-	width: 55vw;
+	width: 45vw;
 	height: auto;
+	margin: 0 auto;
 }
 .clogo {
 	width: 300px;
@@ -2820,7 +2824,7 @@ input, select, textarea {
 
 		.image.right {
 			float: right;
-			margin: 0 0 2rem 2rem;
+			margin: 0 0 1rem 1rem;
 			top: 0.25rem;
 		}
 
