@@ -224,7 +224,7 @@ ul.check li>div {
 	background-position: left, top;
 	background-repeat: repeat, no-repeat;
 	background-size: auto, contain;
-	min-height: calc(25vh + 7rem);
+	min-height: calc(10vh + 7rem);
 	position: relative;
 	text-align: center;
 }
