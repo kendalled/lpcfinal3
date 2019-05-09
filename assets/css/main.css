@@ -102,10 +102,10 @@ ul.check li>div {
 	background: linear-gradient(#ff9e18, #ef6c00);
 	max-width: 100%;
 	border-radius: 10px;
-	padding: 2.2em;
+	padding: 2.2rem;
 	margin: 2.2rem auto;
 	justify-content: center;
-	height: 34rem;
+	height: 32rem;
 }
 @media screen and (max-width: 720px){
 	.testimonial {
@@ -2814,6 +2814,13 @@ input, select, textarea {
 
 			.image.left img, .image.right img {
 				width: 100%
+			}
+
+			@media screen and (min-width: 1200px){
+				.image.left img,
+				.image.right img {
+					width: 80%
+				}
 			}
 
 		.image.left {
