@@ -4167,6 +4167,11 @@ input, select, textarea {
 				#banner .button {
 					background-color: #002d5d;
 					color: #ffffff !important;
+					border: 2px solid #002d5d;
+					-moz-transition: .3s all;
+					-webkit-transition: .3s all;
+					-ms-transition: .3s all;
+					transition: .3s all;
 				}
 
 					#banner input[type="submit"]:hover,
@@ -4174,7 +4179,13 @@ input, select, textarea {
 					#banner input[type="button"]:hover,
 					#banner button:hover,
 					#banner .button:hover {
-						background-color: rgba(255, 255, 255, 0.1);
+						color: #002d5d;
+						transform: scale(1.1);
+						-webkit-transform: scale(1.1);
+						-moz-transform: scale(1.1);
+						-o-transform: scale(1.1);
+						-ms-transform: scale(1.1);
+						z-index: 1;
 					}
 
 						#banner input[type="submit"]:hover:active,
@@ -4190,12 +4201,13 @@ input, select, textarea {
 					#banner input[type="button"].primary,
 					#banner button.primary,
 					#banner .button.primary {
-						background-color: #31d79b;
-						background-image: url("../../images/overlay.png"), linear-gradient(45deg, #ff9e18, #ef6c00);
-						background-size: auto, auto;
-						background-repeat: repeat, no-repeat;
-						box-shadow: 0 0.5rem 1.75rem 0 rgba(0, 0, 0, 0.25);
+						background: linear-gradient(#ff9e18, #ef6c00) !important;
 						color: #ffffff !important;
+						border: none;
+						-moz-transition: .3s all;
+						-webkit-transition: .3s all;
+						-ms-transition: .3s all;
+						transition: .3s all;
 					}
 
 						#banner input[type="submit"].primary:hover,
@@ -4203,7 +4215,13 @@ input, select, textarea {
 						#banner input[type="button"].primary:hover,
 						#banner button.primary:hover,
 						#banner .button.primary:hover {
-							background-color: #53deac;
+							transform: scale(1.05);
+							-webkit-transform: scale(1.05);
+							-moz-transform: scale(1.05);
+							-o-transform: scale(1.05);
+							-ms-transform: scale(1.05);
+							z-index: 1;
+
 						}
 
 							#banner input[type="submit"].primary:hover:active,
