@@ -33,6 +33,9 @@ body {
 .stepimages {
 	max-width: 7rem;
 }
+#pricing h2 {
+	text-align: center;
+}
 ul.check {
 	list-style: none;
 	padding-left: 0;
@@ -71,17 +74,17 @@ ul.check li>div {
 	font-size: 1.1rem;
 }
 .productpage {
-	width: 17rem;
+	max-width: 10rem;
 	height: auto;
 }
 @media screen and (max-width: 600px) {
 	#designs {
 		display: none;
 	}
-
-	.sizing {
-		width: 90vw;
-	}
+}
+.sizing {
+	width: 55vw;
+	height: auto;
 }
 .clogo {
 	width: 300px;
@@ -2802,16 +2805,16 @@ input, select, textarea {
 		}
 
 		.image.left, .image.right {
-			max-width: 50%;
+			max-width: 20vw;
 		}
 
 			.image.left img, .image.right img {
-				width: 100%;
+				width: 100%
 			}
 
 		.image.left {
 			float: left;
-			margin: -3rem 2rem 2rem 0;
+			margin: -1.5rem 1rem 0 0;
 			top: 0.25rem;
 		}
 
