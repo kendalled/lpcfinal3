@@ -55,87 +55,122 @@
 					<header style="text-align: center;">
 						<h1>Free Quote Request</h1>
 
-						<p>Fill out the form below to get started.</p>
+						<p>Select a product below to get started.</p>
 					</header>
-					<form name='Free Quote Request' method='post' action='#' class='alt' enctype='multipart/form-data'>
-						<input type='hidden' name='form-name' value='Free Quote Request' />
-						<div class="row gtr-uniform">
-							<!-- First Name -->
-							<div class="col-6 col-12-xsmall">
-								<input type="text" name="First Name" id="demo-Fname" value="" placeholder="First Name"
-									required>
-							</div>
-							<!-- Last Name -->
-							<div class="col-6 col-12-xsmall">
-								<input type="text" name="Last Name" id="demo-Lname" value="" placeholder="Last Name"
-									required>
-							</div>
-							<!-- Email -->
-							<div class="col-6 col-12-xsmall">
-								<input type="email" name="Email" id="demo-email" value="" placeholder="Email" required>
-							</div>
-							<!-- Phone Number -->
-							<div class="col-6 col-12-xsmall">
-								<input type="text" name="Phone" id="demo-phone" value="" placeholder="Phone Number"
-									required>
-							</div>
+					<ul class="imgbtns">
+						<li><input type="image" src="images/homePins.png" name="LapelPin" class="imgbtn" id="LapelPin" />
+						</li>
+						<li><input type="image" src="images/homeCoins.png" name="ChallengeCoin" class="imgbtn" id="ChallengeCoin" />
+						</li>
+						<li><input type="image" src="images/homeChains.png" name="Keychain" class="imgbtn" id="Keychain" />
+						</li>
+					</ul>
 
-							<div class="col-4 col-12-small">
-								<input type="radio" id="demo-priority-low" name="demo-priority">
-								<label for="demo-priority-low">Lapel Pins</label>
-							</div>
-							<div class="col-4 col-12-small">
-								<input type="radio" id="demo-priority-normal" name="demo-priority">
-								<label for="demo-priority-normal">Challenge Coins</label>
-							</div>
-							<div class="col-4 col-12-small">
-								<input type="radio" id="demo-priority-high" name="demo-priority">
-								<label for="demo-priority-high">Keychains</label>
-							</div>
-							<div class="col-6">
-								<select name="Quantity" id="demo-category" required>
-									<option value="">- Quantity -</option>
-									<option value="100-199">100-199</option>
-									<option value="200-299">200-299</option>
-									<option value="300+">300+</option>
-								</select>
-							</div>
+					<!-- Lapel Pin Selection -->
+					<div id="pinform">
+						<h2 style="text-align: center;">Lapel Pin Quote Request</h2>
+						<form action="https://formspree.io/kendallkj00@gmail.com" method="post">
+							<h4>Contact Info:</h4>
+							<div class="row gtr-uniform">
 
-							<div class="col-6">
-								<select name="Color" id="demo-category" required>
-									<option value="">- Color -</option>
-									<option value="No Color">Colorless</option>
-									<option value="Single">Single Side Colorized</option>
-									<option value="Double">Both Sides Colorized</option>
-								</select>
-							</div>
+								<!-- First Name -->
+								<div class="col-6 col-12-xsmall">
+									<input type="text" name="First Name" id="demo-Fname" value="" placeholder="First Name" required>
+								</div>
+								<!-- Last Name -->
+								<div class="col-6 col-12-xsmall">
+									<input type="text" name="Last Name" id="demo-Lname" value="" placeholder="Last Name" required>
+								</div>
+								<!-- Email -->
+								<div class="col-6 col-12-xsmall">
+									<input type="email" name="Email" id="demo-email" value="" placeholder="Email" required>
+								</div>
+								<!-- Phone Number -->
+								<div class="col-6 col-12-xsmall">
+									<input type="text" name="Phone" id="demo-phone" value="" placeholder="Phone Number" required>
+								</div>
 
-							<!-- Break -->
-							<div class="col-12 col-12-xsmall">
-								<textarea name="Design Notes" id="demo-message" placeholder="Enter your design notes."
-									rows="4"></textarea>
-							</div>
+								<!-- Break -->
+								<div class="col-12" style="padding-bottom: 2em;">
 
-							<div class="col-12 col-12-xsmall file-input-wrapper" id="file-input">
-								<label for="upload-file" class="file-input-button icon fa-upload"> Upload Image</label>
-								<input id="upload-file" type="file" name="image" />
-								<label for="upload-file" data-js-label style="float: right;">No File Selected</label>
-							</div>
+									<h4>Select a Material:</h4>
+									<div class="cc-selector-2">
+										<div class="tooltip">
+											<span class="tooltiptext"><b>Die Struck Pins</b> are without color, and achieve a classy look.</span>
+											<input id="struck" type="radio" name="Pin Type" value="struck" />
+											<label class="drinkcard-cc struck" for="struck"></label>
+										</div>
 
-							<!-- Break -->
-							<div class="col-12">
-								<ul class="actions">
-									<li>
-										<input type="submit" value="Submit" />
-									</li>
-									<li>
-										<input type="reset" value="Reset" class="alt" />
-									</li>
-								</ul>
-							</div>
+										<div class="tooltip">
+											<span class="tooltiptext"><b>Soft Enamel Pins</b> are without color, and achieve a classy look.</span>
+											<input id="softenamel" type="radio" name="Pin Type" value="softenamel" />
+											<label class="drinkcard-cc softenamel" for="softenamel"></label>
+										</div>
 
-						</div>
-					</form>
+										<div class="tooltip">
+											<span class="tooltiptext"><b>Silk Screen Pins</b> are without color, and achieve a classy look.</span>
+											<input id="silk" type="radio" name="Pin Type" value="silk" />
+											<label class="drinkcard-cc silk" for="silk"></label>
+										</div>
+
+										<div class="tooltip">
+											<span class="tooltiptext"><b>Trading Pins</b> are without color, and achieve a classy look.</span>
+											<input id="trading" type="radio" name="Pin Type" value="trading" />
+											<label class="drinkcard-cc trading" for="trading"></label>
+										</div>
+
+										<div class="tooltip">
+											<span class="tooltiptext"><b>Offset Printed Pins</b> are without color, and achieve a classy look.</span>
+											<input id="offset" type="radio" name="Pin Type" value="offset" />
+											<label class="drinkcard-cc offset" for="offset"></label>
+										</div>
+
+										<div class="tooltip">
+											<span class="tooltiptext"><b>Cloisonne Pins</b> are without color, and achieve a classy look.</span>
+											<input id="cloisonne" type="radio" name="Pin Type" value="cloisonne" />
+											<label class="drinkcard-cc cloisonne" for="cloisonne"></label>
+										</div>
+
+									</div>
+									<br />
+									<!-- End Image Buttons -->
+									<h4>Select Quantity & Size:</h4>
+									<select name="Pin Quantity" class="demo-category" required>
+										<option value="">- Quantity -</option>
+										<option value="100">100</option>
+										<option value="200">200</option>
+										<option value="300">300</option>
+										<option value="400">400</option>
+										<option value="500">500+</option>
+									</select>
+									<br />
+
+									<select name="Pin Size" class="demo-category" required>
+										<option value="">- Size -</option>
+										<option value="1.00 in.">1.00 in.</option>
+										<option value="2.00 in.">2.00 in.</option>
+										<option value="3.00 in.">3.00 in.</option>
+										<option value="4.00 in.">4.00 in.</option>
+										<option value="5.00 in.">5.00 in.</option>
+									</select>
+								</div>
+
+								<!-- Break -->
+								<h4>Design Notes (Optional):</h4>
+								<div class="col-12">
+									<textarea name="Design Details" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+								</div>
+								<!-- Break -->
+								<div class="col-12">
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary"></li>
+										<li><input type="reset" value="Reset"></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</div>
+					<!-- End Lapel Pin Selection -->
 				</section>
 
 				<!-- Mini Posts -->
@@ -291,8 +326,7 @@
 					</header>
 					<article class="ordering">
 						<div class="image">
-							<a href="#" title="Links to quote page."><img class="stepimages lazyload"
-									data-src="images/PAPER.svg" alt="" /></a>
+							<a href="#" title="Links to quote page."><img class="stepimages lazyload" data-src="images/PAPER.svg" alt="" /></a>
 						</div>
 						<div class="content">
 							<h3>Submit a quote request or contact us to get started.</h3>
@@ -301,8 +335,7 @@
 					</article>
 					<article class="ordering">
 						<div class="image">
-							<a href="#" title="Links to quote page."><img class="stepimages lazyload"
-									data-src="images/COMPUTER.svg" alt="" /></a>
+							<a href="#" title="Links to quote page."><img class="stepimages lazyload" data-src="images/COMPUTER.svg" alt="" /></a>
 						</div>
 						<div class="content">
 							<h3>Our team of designers will e-mail you a free art proof.</h3>
@@ -311,8 +344,7 @@
 					</article>
 					<article class="ordering">
 						<div class="image">
-							<a href="#" title="Links to quote page."><img class="stepimages lazyload"
-									data-src="images/BOX.svg" alt="" /></a>
+							<a href="#" title="Links to quote page."><img class="stepimages lazyload" data-src="images/BOX.svg" alt="" /></a>
 						</div>
 						<div class="content">
 							<h3>Your items are shipped with speed & safety to your doorstep.</h3>
@@ -398,7 +430,8 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/lazysizes.min.js" async></script>
-	<script>
+
+	<!--<script>
 		var inputs = document.querySelectorAll('#file-input')
 		for (var i = 0, len = inputs.length; i < len; i++) {
 			customInput(inputs[i])
@@ -417,6 +450,17 @@
 					label.innerText = "✓ " + value
 				}
 		}
+	</script>-->
+	<script>
+		$(function() {
+			$('#LapelPin').click(function() {
+
+				//$('#iframeHolder').html('<iframe title="About Video" width="640" height="360" src="https://www.youtube.com/embed/GwDGLVv2WB4" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>');
+				// Makes #vidCard Visible, display:none by default
+				document.getElementById('pinform').style.display = "block";
+
+			});
+		});
 	</script>
 	<!--
 	<script type='text/javascript'>
