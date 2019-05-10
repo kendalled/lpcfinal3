@@ -189,7 +189,16 @@ ul.check li>div {
 .imgbtns li {
 	display: inline;
 }
+.labels {
+	list-style: none;
+	justify-content: center;
+	text-align: center;
+}
+.labels li {
+	display: inline-block;
+	margin: 0 4rem;
 
+}
 .imgbtn {
 	max-width: 10rem;
 	margin: 0 2rem;
