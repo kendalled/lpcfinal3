@@ -4559,10 +4559,10 @@ a.icon.alt2:hover:before {
 
 				#banner:before {
 					pointer-events: none;
-					-moz-transition: opacity 2s ease-in-out 0.75s;
-					-webkit-transition: opacity 2s ease-in-out 0.75s;
-					-ms-transition: opacity 2s ease-in-out 0.75s;
-					transition: opacity 2s ease-in-out 0.75s;
+					-moz-transition: opacity 1.25s ease-in-out 0.75s;
+					-webkit-transition: opacity 1.25s ease-in-out 0.75s;
+					-ms-transition: opacity 1.25s ease-in-out 0.75s;
+					transition: opacity 1.25s ease-in-out 0.75s;
 					background: #333333;
 					content: '';
 					height: 100%;
@@ -4574,10 +4574,10 @@ a.icon.alt2:hover:before {
 				}
 
 				#banner > .content {
-					-moz-transition: -moz-transform 1s ease-in-out, opacity 1.25s ease-in-out;
-					-webkit-transition: -webkit-transform 1s ease-in-out, opacity 1.25s ease-in-out;
-					-ms-transition: -ms-transform 1s ease-in-out, opacity 1.25s ease-in-out;
-					transition: transform 1s ease-in-out, opacity 1.25s ease-in-out;
+					-moz-transition: -moz-transform 1s ease-in-out, opacity 1s ease-in-out;
+					-webkit-transition: -webkit-transform 1s ease-in-out, opacity 1s ease-in-out;
+					-ms-transition: -ms-transform 1s ease-in-out, opacity 1s ease-in-out;
+					transition: transform 1s ease-in-out, opacity 1s ease-in-out;
 					position: relative;
 					z-index: 1;
 				}
