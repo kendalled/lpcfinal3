@@ -1,0 +1,96 @@
+<section id="quoteform">
+					<header style="text-align: center;">
+						<h1>Free Quote Request</h1>
+
+						<p>Fill out the form below to get started.</p>
+					</header>
+					<form name='Free Quote Request' method='post' action='#' class='alt' enctype='multipart/form-data'>
+						<input type='hidden' name='form-name' value='Free Quote Request' />
+						<div class="row gtr-uniform">
+							<!-- First Name -->
+							<div class="col-6 col-12-xsmall">
+								<input type="text" name="First Name" id="demo-Fname" value="" placeholder="First Name"
+									required>
+							</div>
+							<!-- Last Name -->
+							<div class="col-6 col-12-xsmall">
+								<input type="text" name="Last Name" id="demo-Lname" value="" placeholder="Last Name"
+									required>
+							</div>
+							<!-- Email -->
+							<div class="col-6 col-12-xsmall">
+								<input type="email" name="Email" id="demo-email" value="" placeholder="Email" required>
+							</div>
+							<!-- Phone Number -->
+							<div class="col-6 col-12-xsmall">
+								<input type="text" name="Phone" id="demo-phone" value="" placeholder="Phone Number"
+									required>
+							</div>
+
+							<div class="col-4 col-12-small">
+								<input type="radio" id="demo-priority-low" name="demo-priority">
+								<label for="demo-priority-low">Lapel Pins</label>
+							</div>
+							<div class="col-4 col-12-small">
+								<input type="radio" id="demo-priority-normal" name="demo-priority">
+								<label for="demo-priority-normal">Challenge Coins</label>
+							</div>
+							<div class="col-4 col-12-small">
+								<input type="radio" id="demo-priority-high" name="demo-priority">
+								<label for="demo-priority-high">Keychains</label>
+							</div>
+							<div class="col-6">
+								<select name="Quantity" id="demo-category" required>
+									<option value="">- Quantity -</option>
+									<option value="100-199">100-199</option>
+									<option value="200-299">200-299</option>
+									<option value="300+">300+</option>
+								</select>
+							</div>
+
+							<div class="col-6">
+								<select name="Color" id="demo-category" required>
+									<option value="">- Color -</option>
+									<option value="No Color">Colorless</option>
+									<option value="Single">Single Side Colorized</option>
+									<option value="Double">Both Sides Colorized</option>
+								</select>
+							</div>
+
+							<!-- Break -->
+							<div class="col-12 col-12-xsmall">
+								<textarea name="Design Notes" id="demo-message" placeholder="Enter your design notes."
+									rows="4"></textarea>
+							</div>
+
+							<div class="col-12 col-12-xsmall file-input-wrapper" id="file-input">
+								<label for="upload-file" class="file-input-button icon fa-upload"> Upload Image</label>
+								<input id="upload-file" type="file" name="image" />
+								<label for="upload-file" data-js-label style="float: right;">No File Selected</label>
+							</div>
+
+							<!-- Break -->
+							<div class="col-12">
+								<ul class="actions">
+									<li>
+										<input type="submit" value="Submit" />
+									</li>
+									<li>
+										<input type="reset" value="Reset" class="alt" />
+									</li>
+								</ul>
+							</div>
+
+						</div>
+					</form>
+                </section>
+                
+                <ul class="imgbtns">
+                    <li><input type="image" src="images/homePins.png" name="saveForm" class="imgbtn" id="saveForm" />
+                    </li>
+                    <li><input type="image" src="images/homeCoins.png" name="saveForm" class="imgbtn" id="saveForm" />
+                    </li>
+                    <li><input type="image" src="images/homeChains.png" name="saveForm" class="imgbtn" id="saveForm" />
+                    </li>
+
+                </ul>

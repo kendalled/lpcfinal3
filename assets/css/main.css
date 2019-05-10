@@ -181,14 +181,151 @@ ul.check li>div {
 	height: 1.75rem;
 	vertical-align: middle;
 }
-#quoteform {
-	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-  border-radius: 6px;
-  background-color: #fbfbfb;
-  padding: 3em;
-  max-width: 60em;
-  height: auto;
+
+.imgbtns {
+	list-style: none;
 }
+
+.imgbtns li {
+	display: inline;
+}
+
+.imgbtn {
+	max-width: 10rem;
+	margin: 0 2rem;
+}
+
+.imgbtn:hover {
+	transform: scale(1.2);
+}
+#quoteform {
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
+	0 1px 2px rgba(0, 0, 0, 0.24);
+	border-radius: 6px;
+	background-color: #f7f7f7;
+	padding: 3em;
+	max-width: 70em;
+	height: auto;
+}
+
+.offset {
+	background-image: url(https://i.imgur.com/Wag4L8F.png);
+}
+
+.softenamel {
+	background-image: url(https://i.imgur.com/iChDOEg.png);
+}
+
+.cloisonne {
+	background-image: url(https://i.imgur.com/MW98Emj.png);
+}
+
+.silk {
+	background-image: url(https://i.imgur.com/YvpvirU.png);
+}
+
+.trading {
+	background-image: url(https://i.imgur.com/AUZR0Gk.png);
+}
+
+.struck {
+	background-image: url(https://i.imgur.com/Dp9Jn3t.png);
+}
+
+.noColor {
+	background-image: url(https://i.imgur.com/Z6JVfjL.png);
+}
+
+.oneColor {
+	background-image: url(https://i.imgur.com/qEbbEET.png);
+}
+
+.bothColor {
+	background-image: url(https://i.imgur.com/WJhNlii.png);
+}
+
+.dieKeychain {
+	background-image: url(https://i.imgur.com/98xnrGK.png);
+}
+
+.enamelKeychain {
+	background-image: url(https://i.imgur.com/vdjdH4y.png);
+}
+
+.offsetKeychain {
+	background-image: url(https://i.imgur.com/3dtXygQ.png);
+}
+
+.cc-selector-2 input:active+.drinkcard-cc,
+.cc-selector input:active+.drinkcard-cc {
+	opacity: .9;
+}
+
+.cc-selector-2 input:checked+.drinkcard-cc,
+.cc-selector input:checked+.drinkcard-cc {
+	-webkit-filter: none;
+	-moz-filter: none;
+	filter: none;
+}
+
+.drinkcard-cc {
+	cursor: pointer;
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: inline-block;
+	width: 8em;
+	height: 6em;
+	-webkit-transition: all 100ms ease-in;
+	-moz-transition: all 100ms ease-in;
+	transition: all 100ms ease-in;
+
+}
+
+/*ToolTip*/
+
+.demo-category {
+	background-color: #fff;
+}
+
+.tooltip {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltip .tooltiptext {
+	visibility: hidden;
+	width: 12em;
+	background-color: #fff;
+	color: #000;
+	text-align: center;
+	border-radius: 6px;
+	padding: .5em .75em .5em .75em;
+	position: absolute;
+	z-index: 1;
+	top: 150%;
+	left: 50%;
+	margin-left: -4em;
+	margin-top: -3.5em;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.tooltip .tooltiptext::after {
+	content: "";
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -3em;
+
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent white transparent;
+}
+
+.tooltip:hover .tooltiptext {
+	visibility: visible;
+}
+
+/* END SPOTLIGHT */
 .ordering span {
 	background-color: #002d5d;
 	border-radius: 100%;
