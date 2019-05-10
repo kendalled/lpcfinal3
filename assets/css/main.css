@@ -193,6 +193,7 @@ ul.check li>div {
 .imgbtn {
 	max-width: 10rem;
 	margin: 0 2rem;
+	transition: .25s all;
 }
 
 .imgbtn:hover {
