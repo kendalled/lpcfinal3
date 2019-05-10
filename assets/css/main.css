@@ -211,6 +211,14 @@ ul.check li>div {
 #pinform {
 	display: none;
 }
+
+#coinform {
+	display: none;
+}
+
+#chainform {
+	display: none;
+}
 .offset {
 	background-image: url(https://i.imgur.com/Wag4L8F.png);
 }
