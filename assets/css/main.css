@@ -211,7 +211,6 @@ ul.check li>div {
 	margin: 0;
 	justify-content: center;
 	text-align: center;
-
 }
 
 .imgbtns li {
@@ -226,7 +225,6 @@ ul.check li>div {
 .imgbtns li > input:hover {
 	transform: scale(1.2);
 }
-
 
 #quoteform {
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
