@@ -611,35 +611,42 @@ body.is-preload #banner2 > .content {
 	max-width: 8rem;
 	height: auto;
 }
+#choice h1 {
+	font-size: 2rem;
+}
 .file-input-wrapper {
 	 display: inline-block;
 	 overflow-y: hidden;
 }
+.file-input-wrapper label {
+	padding-top: 1rem;
+}
  .file-input-wrapper .file-input-button {
-	 color: white;
-	 line-height: 1.2;
-	 border-radius: 6px;
-	 padding: 1em .5em 1.5em 1em;
-	 background: #002d5d;
-	 box-sizing: border-box;
-	 font-family: sans-serif;
-	 width: 10em;
-	 height: 3em;
-	 display: inline;
+	 -moz-appearance: none;
+	 -webkit-appearance: none;
+	 -ms-appearance: none;
+	 appearance: none;
+	 -moz-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+	 -webkit-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+	 -ms-transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+	 transition: background-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+	 border: 0;
+	 border-radius: 12px;
+	 cursor: pointer;
 	 display: inline-block;
-	 font-size: 15px;
-	 font-weight: 400;
+	 font-weight: 300;
+	 height: 3rem;
+	 line-height: 3rem;
+	 padding: 0 1.75rem;
 	 text-align: center;
-	 transition: color 500ms, background-color 500ms;
-	 -moz-transition: color 500ms, background-color 500ms;
-	 -webkit-transition: color 500ms, background-color 500ms;
-	 -o-transition: color 500ms, background-color 500ms;
-	 -ie-transition: color 500ms, background-color 500ms;
+	 text-decoration: none;
+	 white-space: nowrap;
+	 background-color: #002d5d;
+	 color: #fff;
 	 cursor: pointer;
 }
  .file-input-wrapper .file-input-button:hover {
-	 color: #000000;
-	 background: #ccc;
+	 background: #999;
 	 text-decoration: none;
 }
  .file-input-wrapper input {
