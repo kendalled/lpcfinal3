@@ -83,6 +83,11 @@ ul.check li>div {
 	list-style: none;
 
 }
+#designs {
+	background: #fff;
+	border-radius: 10px;
+	padding-bottom: 1.5rem;
+}
 #designs h2 {
 	text-align: center;
 }
@@ -2994,7 +2999,8 @@ input, select, textarea {
 			@media screen and (min-width: 1200px){
 				.image.left img,
 				.image.right img {
-					width: 80%
+					width: 70%;
+					margin-left: 3rem;
 				}
 			}
 
