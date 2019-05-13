@@ -4416,7 +4416,7 @@ a.icon.alt2:hover:before {
 				-ms-justify-content: center;
 				justify-content: center;
 				background-attachment: fixed, fixed;
-				background-image: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("../../images/g01.jpg");
+				background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../../images/g01.jpg");
 				background-position: center, center;
 				background-repeat: repeat, no-repeat;
 				background-size: auto, cover;
