@@ -382,7 +382,9 @@ ul.check li>div {
 		display: none;
 	}
 }
-
+.ordering {
+	padding-bottom: 1.55rem !important;
+}
 .ordering h3{
 	font-weight: 400;
 	font-size: 1.1rem;
