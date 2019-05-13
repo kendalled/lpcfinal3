@@ -223,7 +223,7 @@ ul.check li>div {
 	margin: 0 1rem;
 	transition: .25s all;
 }
-.imgbtns li > *:hover {
+.imgbtns li > input:hover {
 	transform: scale(1.2);
 }
 
