@@ -258,6 +258,10 @@ ul.check li>div {
 	margin: 0 auto;
 }
 
+#coinSizing {
+	display: none;
+}
+
 .polishedSilver {
 	background-image: url(https://i.imgur.com/LIvrnPe.png);
 }
