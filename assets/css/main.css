@@ -262,6 +262,28 @@ ul.check li>div {
 	display: none;
 }
 
+.size150 {
+	background-image: url(../../images/sizes/size150.png);
+}
+.size175 {
+	background-image: url(../../images/sizes/size175.png);
+}
+.size200 {
+	background-image: url(../../images/sizes/size200.png);
+}
+.size225 {
+	background-image: url(../../images/sizes/size225.png);
+}
+.size250 {
+	background-image: url(../../images/sizes/size250.png);
+}
+.size275 {
+	background-image: url(../../images/sizes/size275.png);
+}
+.size300 {
+	background-image: url(../../images/sizes/size300.png);
+}
+
 .polishedSilver {
 	background-image: url(https://i.imgur.com/LIvrnPe.png);
 }
@@ -373,7 +395,12 @@ ul.check li>div {
 	position: relative;
 	display: inline-block;
 }
-.tooltip p {
+#coinSizing p {
+	color: #444;
+	font-size: .8rem;
+	padding: 0 0 0 2rem;
+}
+#coinPlating p {
 	color: #444;
 	font-size: .8rem;
 	padding: 0 0 0 .5rem;

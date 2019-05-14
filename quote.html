@@ -228,6 +228,54 @@
 										</div>
 									</div>
 
+									<div id="coinSizing">
+										<h4>Select Size:</h4>
+										<div class="cc-selector-2">
+											<div class="tooltip">
+											  <input id="size150" type="radio" name="Coin Sizing:" value="size150" />
+											  <label class="drinkcard-cc size150" for="size150"></label>
+											  <p>1.50"</p>
+											</div>
+
+											<div class="tooltip">
+											  <input id="size175" type="radio" name="Coin Sizing:" value="size175" />
+											  <label class="drinkcard-cc size175" for="size175"></label>
+											  <p>1.75"</p>
+											</div>
+
+											<div class="tooltip">
+											  <input id="size200" type="radio" name="Coin Sizing:" value="size200" />
+											  <label class="drinkcard-cc size200" for="size200"></label>
+											  <p>2.00"</p>
+											</div>
+
+											<div class="tooltip">
+											  <input id="size225" type="radio" name="Coin Sizing:" value="size225" />
+											  <label class="drinkcard-cc size225" for="size225"></label>
+											  <p>2.25"</p>
+											</div>
+
+											<div class="tooltip">
+											  <input id="size250" type="radio" name="Coin Sizing:" value="size250" />
+											  <label class="drinkcard-cc size250" for="size250"></label>
+											  <p>2.50"</p>
+											</div>
+
+											<div class="tooltip">
+											  <input id="size275" type="radio" name="Coin Sizing:" value="size275" />
+											  <label class="drinkcard-cc size275" for="size275"></label>
+											  <p>2.75"</p>
+											</div>
+
+											<div class="tooltip">
+											  <input id="size300" type="radio" name="Coin Sizing:" value="size300" />
+											  <label class="drinkcard-cc size300" for="size300"></label>
+											  <p>3.00"</p>
+											</div>
+
+										</div>
+									</div>
+
 									<!-- Coin Plating -->
 									<div id="coinPlating">
 										<h4>Select Plating:</h4>
@@ -297,73 +345,7 @@
 										</div>
 									</div>
 
-									<div id="coinSizing">
-										<h4>Select Plating:</h4>
-										<div class="cc-selector-2">
-											<div class="tooltip">
-												<input id="polishedGold" type="radio" name="Coin Plating:" value="PolishedGold" />
-												<label class="drinkcard-cc polishedGold" for="polishedGold"></label>
-												<p>Polished Gold</p>
-											</div>
 
-											<div class="tooltip">
-											  <input id="polishedSilver" type="radio" name="Coin Plating:" value="polishedSilver" />
-											  <label class="drinkcard-cc polishedSilver" for="polishedSilver"></label>
-												<p>Polished Silver</p>
-											</div>
-
-											<div class="tooltip">
-											  <input id="polishedCopper" type="radio" name="Coin Plating:" value="polishedCopper" />
-											  <label class="drinkcard-cc polishedCopper" for="polishedCopper"></label>
-												<p>Polished Copper</p>
-											</div>
-
-											<div class="tooltip">
-											  <input id="polishedNickel" type="radio" name="Coin Plating:" value="polishedNickel" />
-											  <label class="drinkcard-cc polishedNickel" for="polishedNickel"></label>
-												<p>Polished Nickel</p>
-											</div>
-
-											<div class="tooltip">
-											  <input id="polishedBlack" type="radio" name="Coin Plating:" value="polishedBlack" />
-											  <label class="drinkcard-cc polishedBlack" for="polishedBlack"></label>
-												<p>Polished Black</p>
-											</div>
-
-											<div class="tooltip">
-											  <input id="antiqueGold" type="radio" name="Coin Plating:" value="antiqueGold" />
-											  <label class="drinkcard-cc antiqueGold" for="antiqueGold"></label>
-												<p>Antique Gold</p>
-											</div>
-
-											<div class="tooltip">
-											  <input id="antiqueSilver" type="radio" name="Coin Plating:" value="antiqueSilver" />
-											  <label class="drinkcard-cc antiqueSilver" for="antiqueSilver"></label>
-												<p>Antique Silver</p>
-											</div>
-
-											<div class="tooltip">
-											  <input id="antiqueCopper" type="radio" name="Coin Plating:" value="antiqueCopper" />
-											  <label class="drinkcard-cc antiqueCopper" for="antiqueCopper"></label>
-												<p>Antique Copper</p>
-											</div>
-
-											<div class="tooltip">
-											  <input id="dual" type="radio" name="Coin Plating:" value="dual" />
-											  <label class="drinkcard-cc dual" for="dual"></label>
-												<p>Dual-Plated</p>
-											</div>
-
-											<div class="tooltip">
-											  <input id="colorCoated" type="radio" name="Coin Plating:" value="colorCoated" />
-											  <label class="drinkcard-cc colorCoated" for="colorCoated"></label>
-												<p>Color Coated</p>
-											</div>
-
-
-
-										</div>
-									</div>
 
 									<br />
 									<br />
@@ -783,7 +765,7 @@
 				document.getElementById('choice').style.display = "none";
 				document.getElementById('rstbtn').style.display = "block";
 			});
-
+			// Reset Button
 			$('#rstbtn').click(function() {
 				document.getElementById('pinform').style.display = "none";
 				document.getElementById('coinform').style.display = "none";
@@ -791,21 +773,52 @@
 				document.getElementById('choice').style.display = "block";
 				document.getElementById('rstbtn').style.display = "none";
 			});
-
+			// Start Color Choices' Triggers
 			$('#noColor').click(function() {
-				document.getElementById('coinPlating').style.display = "block";
+				document.getElementById('coinSizing').style.display = "block";
 
 			});
 
 			$('#oneColor').click(function() {
-				document.getElementById('coinPlating').style.display = "block";
+				document.getElementById('coinSizing').style.display = "block";
 
 			});
 
 			$('#bothColor').click(function() {
+				document.getElementById('coinSizing').style.display = "block";
+
+			});
+			// End color choice Triggers
+			$('#size150').click(function() {
 				document.getElementById('coinPlating').style.display = "block";
 
 			});
+			$('#size175').click(function() {
+				document.getElementById('coinPlating').style.display = "block";
+
+			});
+			$('#size200').click(function() {
+				document.getElementById('coinPlating').style.display = "block";
+
+			});
+			$('#size225').click(function() {
+				document.getElementById('coinPlating').style.display = "block";
+
+			});
+			$('#size250').click(function() {
+				document.getElementById('coinPlating').style.display = "block";
+
+			});
+			$('#size275').click(function() {
+				document.getElementById('coinPlating').style.display = "block";
+
+			});
+			$('#size300').click(function() {
+				document.getElementById('coinPlating').style.display = "block";
+
+			});
+
+
 		});
 	</script>
 	<!--
