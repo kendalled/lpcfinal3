@@ -241,15 +241,7 @@ ul.check li>div {
 	padding-top: 2rem !important;
 }
 
-#pinform {
-	display: none;
-}
-
-#coinform {
-	display: none;
-}
-
-#chainform {
+#pinform, #coinform, #chainform, #rstbtn {
 	display: none;
 }
 
@@ -491,9 +483,6 @@ ul.check li>div {
 
 }
 
-#rstbtn {
-	display: none;
-}
 .ordering {
 	padding-bottom: 1.55rem !important;
 }
