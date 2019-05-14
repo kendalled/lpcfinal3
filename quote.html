@@ -216,15 +216,82 @@
 										</div>
 
 										<div class="tooltip">
-											<span class="tooltiptext"><b>One-Sided Color Challenge Coins</b> are perfect for a coin with two looks: one sleek & the other vibrant.</span>
+											<span class="tooltiptext"><b>One-Sided Color</b> achieves two looks: one sleek & one vibrant.</span>
 											<input id="oneColor" type="radio" name="Coin Type:" value="OneColorCoin" />
 											<label class="drinkcard-cc oneColor" for="oneColor"></label>
 										</div>
 
 										<div class="tooltip">
-											<span class="tooltiptext"><b>Two-Sided Color Challenge Coins</b> are vivid and help your design stand out.</span>
+											<span class="tooltiptext"><b>Two-Sided Color</b>is vivid and helps your design stand out.</span>
 											<input id="bothColor" type="radio" name="Coin Type:" value="BothColorCoin" />
 											<label class="drinkcard-cc bothColor" for="bothColor"></label>
+										</div>
+									</div>
+									<div id="coinPlating">
+										<h4>Select Plating:</h4>
+										<div class="cc-selector-2">
+											<div class="tooltip">
+												<input id="polishedGold" type="radio" name="Coin Plating:" value="PolishedGold" />
+												<label class="drinkcard-cc polishedGold" for="polishedGold"></label>
+												<p>Polished Gold</p>
+											</div>
+
+											<div class="tooltip">
+											  <input id="polishedSilver" type="radio" name="Coin Plating:" value="polishedSilver" />
+											  <label class="drinkcard-cc polishedSilver" for="polishedSilver"></label>
+												<p>Polished Silver</p>
+											</div>
+
+											<div class="tooltip">
+											  <input id="polishedCopper" type="radio" name="Coin Plating:" value="polishedCopper" />
+											  <label class="drinkcard-cc polishedCopper" for="polishedCopper"></label>
+												<p>Polished Copper</p>
+											</div>
+
+											<div class="tooltip">
+											  <input id="polishedNickel" type="radio" name="Coin Plating:" value="polishedNickel" />
+											  <label class="drinkcard-cc polishedNickel" for="polishedNickel"></label>
+												<p>Polished Nickel</p>
+											</div>
+
+											<div class="tooltip">
+											  <input id="polishedBlack" type="radio" name="Coin Plating:" value="polishedBlack" />
+											  <label class="drinkcard-cc polishedBlack" for="polishedBlack"></label>
+												<p>Polished Black</p>
+											</div>
+
+											<div class="tooltip">
+											  <input id="antiqueGold" type="radio" name="Coin Plating:" value="antiqueGold" />
+											  <label class="drinkcard-cc antiqueGold" for="antiqueGold"></label>
+												<p>Antique Gold</p>
+											</div>
+
+											<div class="tooltip">
+											  <input id="antiqueSilver" type="radio" name="Coin Plating:" value="antiqueSilver" />
+											  <label class="drinkcard-cc antiqueSilver" for="antiqueSilver"></label>
+												<p>Antique Silver</p>
+											</div>
+
+											<div class="tooltip">
+											  <input id="antiqueCopper" type="radio" name="Coin Plating:" value="antiqueCopper" />
+											  <label class="drinkcard-cc antiqueCopper" for="antiqueCopper"></label>
+												<p>Antique Copper</p>
+											</div>
+
+											<div class="tooltip">
+											  <input id="dual" type="radio" name="Coin Plating:" value="dual" />
+											  <label class="drinkcard-cc dual" for="dual"></label>
+												<p>Dual-Plated</p>
+											</div>
+
+											<div class="tooltip">
+											  <input id="colorCoated" type="radio" name="Coin Plating:" value="colorCoated" />
+											  <label class="drinkcard-cc colorCoated" for="colorCoated"></label>
+												<p>Color Coated</p>
+											</div>
+
+
+
 										</div>
 									</div>
 
@@ -232,7 +299,7 @@
 									<br />
 
 									<!-- End Image Buttons -->
-									<h4>Select Quantity & Size:</h4>
+									<h4>Select Quantity:</h4>
 									<select name="Quantity of Coin" class="demo-category" required>
 										<option value="">- Quantity -</option>
 										<option value="100">100</option>
@@ -243,15 +310,6 @@
 									</select>
 									<br />
 
-									<select name="Size" class="demo-category" required>
-										<option value="">- Size -</option>
-										<option value="1.00 in.">1.00 in.</option>
-										<option value="2.00 in.">2.00 in.</option>
-										<option value="3.00 in.">3.00 in.</option>
-										<option value="4.00 in.">4.00 in.</option>
-										<option value="5.00 in.">5.00 in.</option>
-									</select>
-									<br />
 									<h4>Design Notes (Optional):</h4>
 
 									<textarea name="Design Details" id="Coin-message" placeholder="Enter your message" rows="4"></textarea>
@@ -635,13 +693,11 @@
 	<script>
 		$(function() {
 			$('#LapelPin').click(function() {
-
 				document.getElementById('pinform').style.display = "block";
 				document.getElementById('coinform').style.display = "none";
 				document.getElementById('chainform').style.display = "none";
 				document.getElementById('choice').style.display = "none";
 				document.getElementById('rstbtn').style.display = "block";
-
 			});
 			$('#ChallengeCoin').click(function() {
 				document.getElementById('pinform').style.display = "none";
@@ -649,8 +705,6 @@
 				document.getElementById('chainform').style.display = "none";
 				document.getElementById('choice').style.display = "none";
 				document.getElementById('rstbtn').style.display = "block";
-
-
 			});
 			$('#Keychain').click(function() {
 				document.getElementById('pinform').style.display = "none";
@@ -658,8 +712,6 @@
 				document.getElementById('chainform').style.display = "block";
 				document.getElementById('choice').style.display = "none";
 				document.getElementById('rstbtn').style.display = "block";
-
-
 			});
 
 			$('#rstbtn').click(function() {
@@ -668,7 +720,20 @@
 				document.getElementById('chainform').style.display = "none";
 				document.getElementById('choice').style.display = "block";
 				document.getElementById('rstbtn').style.display = "none";
+			});
 
+			$('#noColor').click(function() {
+				document.getElementById('coinPlating').style.display = "block";
+
+			});
+
+			$('#oneColor').click(function() {
+				document.getElementById('coinPlating').style.display = "block";
+
+			});
+
+			$('#bothColor').click(function() {
+				document.getElementById('coinPlating').style.display = "block";
 
 			});
 		});
