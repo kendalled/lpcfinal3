@@ -186,20 +186,17 @@
 							<div class="row gtr-uniform">
 
 								<!-- First Name -->
-								<div class="col-6 col-12-xsmall">
-									<input type="text" name="First Name" id="Coin-Fname" value="" placeholder="First Name" required>
+								<div class="col-12 col-12-xsmall">
+									<input type="text" name="Full Name" id="Coin-FullName" value="" placeholder="Full Name" required>
 								</div>
-								<!-- Last Name -->
-								<div class="col-6 col-12-xsmall">
-									<input type="text" name="Last Name" id="Coin-Lname" value="" placeholder="Last Name" required>
-								</div>
+
 								<!-- Email -->
 								<div class="col-6 col-12-xsmall">
 									<input type="email" name="Email" id="Coin-email" value="" placeholder="Email" required>
 								</div>
 								<!-- Phone Number -->
 								<div class="col-6 col-12-xsmall">
-									<input type="text" name="Phone" id="Coin-phone" value="" placeholder="Phone Number" required>
+									<input type="tel" name="Phone" id="Coin-phone" value="" placeholder="Phone Number" required>
 								</div>
 
 								<!-- Break -->
@@ -230,7 +227,7 @@
 									</div>
 
 									<div id="coinSizing">
-										<hr/>
+										<hr />
 										<h4>Select Size:</h4>
 										<div class="cc-selector-2">
 											<div class="tooltip">
@@ -280,7 +277,7 @@
 
 									<!-- Coin Plating -->
 									<div id="coinPlating">
-										<hr/>
+										<hr />
 										<h4>Select Plating:</h4>
 										<div class="cc-selector-2">
 											<div class="tooltip">
@@ -350,7 +347,7 @@
 
 									<!-- Bezel Choice -->
 									<div id="bezelChoice">
-										<hr/>
+										<hr />
 										<h4>Select a Coin Edge:</h4>
 										<div class="cc-selector-2">
 											<div class="tooltip">
@@ -396,7 +393,7 @@
 
 									<!-- Bezel Choice -->
 									<div id="packaging">
-										<hr/>
+										<hr />
 										<h4>Select Coin Packaging:</h4>
 										<div class="cc-selector-2">
 											<div class="tooltip">
@@ -427,7 +424,7 @@
 
 
 										</div>
-										<hr/>
+										<hr />
 									</div>
 
 									<br />
@@ -804,7 +801,7 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/lazysizes.min.js" async></script>
-
+	<script src="assets/js/stepform.min.js"></script>
 	<!--<script>
 		var inputs = document.querySelectorAll('#file-input')
 		for (var i = 0, len = inputs.length; i < len; i++) {
@@ -825,153 +822,7 @@
 				}
 		}
 	</script>-->
-	<script>
-		$(function() {
-			$('#LapelPin').click(function() {
-				document.getElementById('pinform').style.display = "block";
-				document.getElementById('coinform').style.display = "none";
-				document.getElementById('chainform').style.display = "none";
-				document.getElementById('choice').style.display = "none";
-				document.getElementById('rstbtn').style.display = "block";
-			});
-			$('#ChallengeCoin').click(function() {
-				document.getElementById('pinform').style.display = "none";
-				document.getElementById('coinform').style.display = "block";
-				document.getElementById('chainform').style.display = "none";
-				document.getElementById('choice').style.display = "none";
-				document.getElementById('rstbtn').style.display = "block";
-			});
-			$('#Keychain').click(function() {
-				document.getElementById('pinform').style.display = "none";
-				document.getElementById('coinform').style.display = "none";
-				document.getElementById('chainform').style.display = "block";
-				document.getElementById('choice').style.display = "none";
-				document.getElementById('rstbtn').style.display = "block";
-			});
-			// Reset Button
-			$('#rstbtn').click(function() {
-				document.getElementById('pinform').style.display = "none";
-				document.getElementById('coinform').style.display = "none";
-				document.getElementById('chainform').style.display = "none";
-				document.getElementById('choice').style.display = "block";
-				document.getElementById('rstbtn').style.display = "none";
-			});
-			// Start Color Choices' Triggers
-			$('#noColor').click(function() {
-				document.getElementById('coinSizing').style.display = "block";
 
-			});
-
-			$('#oneColor').click(function() {
-				document.getElementById('coinSizing').style.display = "block";
-
-			});
-
-			$('#bothColor').click(function() {
-				document.getElementById('coinSizing').style.display = "block";
-
-			});
-			// End color choice Triggers
-			$('#size150').click(function() {
-				document.getElementById('coinPlating').style.display = "block";
-
-			});
-			$('#size175').click(function() {
-				document.getElementById('coinPlating').style.display = "block";
-
-			});
-			$('#size200').click(function() {
-				document.getElementById('coinPlating').style.display = "block";
-
-			});
-			$('#size225').click(function() {
-				document.getElementById('coinPlating').style.display = "block";
-
-			});
-			$('#size250').click(function() {
-				document.getElementById('coinPlating').style.display = "block";
-
-			});
-			$('#size275').click(function() {
-				document.getElementById('coinPlating').style.display = "block";
-
-			});
-			$('#size300').click(function() {
-				document.getElementById('coinPlating').style.display = "block";
-
-			});
-			// end of size choice triggers
-			$('#polishedGold').click(function() {
-				document.getElementById('bezelChoice').style.display = "block";
-
-			});
-			$('#antiqueGold').click(function() {
-				document.getElementById('bezelChoice').style.display = "block";
-
-			});
-			$('#polishedSilver').click(function() {
-				document.getElementById('bezelChoice').style.display = "block";
-
-			});
-			$('#antiqueSilver').click(function() {
-				document.getElementById('bezelChoice').style.display = "block";
-
-			});
-			$('#polishedCopper').click(function() {
-				document.getElementById('bezelChoice').style.display = "block";
-
-			});
-			$('#antiqueCopper').click(function() {
-				document.getElementById('bezelChoice').style.display = "block";
-
-			});
-			$('#polishedBlack').click(function() {
-				document.getElementById('bezelChoice').style.display = "block";
-
-			});
-			$('#dual').click(function() {
-				document.getElementById('bezelChoice').style.display = "block";
-
-			});
-			$('#polishedNickel').click(function() {
-				document.getElementById('bezelChoice').style.display = "block";
-
-			});
-			$('#colorCoated').click(function() {
-				document.getElementById('bezelChoice').style.display = "block";
-
-			});
-			// Edge triggers
-			$('#plain').click(function() {
-				document.getElementById('packaging').style.display = "block";
-
-			});
-			$('#rope').click(function() {
-				document.getElementById('packaging').style.display = "block";
-
-			});
-			$('#spur').click(function() {
-				document.getElementById('packaging').style.display = "block";
-
-			});
-			$('#oblique').click(function() {
-				document.getElementById('packaging').style.display = "block";
-
-			});
-			$('#crosscut').click(function() {
-				document.getElementById('packaging').style.display = "block";
-
-			});
-			$('#bezeled').click(function() {
-				document.getElementById('packaging').style.display = "block";
-
-			});
-
-
-
-
-		});
-	</script>
 	<!--
 	<script type='text/javascript'>
 		function goodbye(e) {

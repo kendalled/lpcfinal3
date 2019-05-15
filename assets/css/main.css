@@ -227,7 +227,7 @@ ul.check li>div {
 	transition: .25s all;
 }
 .imgbtns li > input:hover {
-	transform: scale(1.2);
+	transform: scale(1.15);
 }
 
 #quoteform {
@@ -4512,6 +4512,9 @@ a.icon.alt2:hover:before {
 		}
 
 		/* Banner */
+		.major p {
+			color: #fff;
+		}
 
 			#banner {
 				background-color: #3a3a3a;
@@ -4531,37 +4534,13 @@ a.icon.alt2:hover:before {
 				-ms-justify-content: center;
 				justify-content: center;
 				background-attachment: fixed, fixed;
-				background-image: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("../../images/g01.jpg");
+				background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.75)), url("../../images/g01.jpg");
 				background-position: center, center;
 				background-repeat: repeat, no-repeat;
 				background-size: auto, cover;
 				min-height: calc(75vh + 7rem);
 				position: relative;
 				text-align: center;
-			}
-			.bannerCard {
-				background-color: rgba(255, 255, 255, .9);
-				padding: 2rem;
-				max-width: 95vw;
-				margin: 0 auto;
-				box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-				border-radius: 10px;
-			}
-
-			#bannerLogo {
-				width: 25rem;
-				height: auto;
-				margin: 0 auto;
-				padding-bottom: 2rem;
-			}
-			@media screen and (max-width: 600px){
-				.bannerCard {
-					padding: 1.5rem;
-
-				}
-				#bannerLogo {
-					width: 20rem;
-				}
 			}
 
 				#banner input[type="submit"],
@@ -4709,10 +4688,10 @@ a.icon.alt2:hover:before {
 
 				#banner:before {
 					pointer-events: none;
-					-moz-transition: opacity 1.25s ease-in-out 0.75s;
-					-webkit-transition: opacity 1.25s ease-in-out 0.75s;
-					-ms-transition: opacity 1.25s ease-in-out 0.75s;
-					transition: opacity 1.25s ease-in-out 0.75s;
+					-moz-transition: opacity 1s ease-in-out 0.75s;
+					-webkit-transition: opacity 1s ease-in-out 0.75s;
+					-ms-transition: opacity 1s ease-in-out 0.75s;
+					transition: opacity 1s ease-in-out 0.75s;
 					background: #333333;
 					content: '';
 					height: 100%;
@@ -4722,14 +4701,14 @@ a.icon.alt2:hover:before {
 					top: 0;
 					width: 100%;
 				}
-
+				/*Banner timings*/
 				#banner > .content {
-					-moz-transition: -moz-transform 1s ease-in-out, opacity 1s ease-in-out;
-					-webkit-transition: -webkit-transform 1s ease-in-out, opacity 1s ease-in-out;
-					-ms-transition: -ms-transform 1s ease-in-out, opacity 1s ease-in-out;
-					transition: transform 1s ease-in-out, opacity 1s ease-in-out;
-					position: relative;
-					z-index: 1;
+				  -moz-transition: -moz-transform .75s ease-in-out, opacity .75s ease-in-out;
+				  -webkit-transition: -webkit-transform .75s ease-in-out, opacity .75s ease-in-out;
+				  -ms-transition: -ms-transform .75s ease-in-out, opacity .75s ease-in-out;
+				  transition: transform .75s ease-in-out, opacity .75s ease-in-out;
+				  position: relative;
+				  z-index: 1;
 				}
 
 					#banner > .content > :last-child {
