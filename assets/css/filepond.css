@@ -93,12 +93,24 @@
 }
 
 .filepond--label-action {
-  text-decoration: underline;
+  text-decoration: none;
   -webkit-text-decoration-skip: ink;
   text-decoration-skip-ink: auto;
   -webkit-text-decoration-color: #a7a4a4;
   text-decoration-color: #a7a4a4;
   cursor: pointer;
+  background: #fff;
+  border-radius: 999em;
+  padding: .5em 1.25em;
+  margin-left: .75em;
+  box-shadow: 0 0.175em 0.125em -0.125em rgba(0,0,0,.25), 0 0.125em 0.5em rgba(0,0,0,.15);
+  border: 2px solid #fff;
+  transition: .25s all;
+  /*Need webkit and moz transition */
+}
+
+.filepond--label-action:hover {
+  border: 2px solid #ff9e18;
 }
 
 .filepond--root[data-disabled] .filepond--drop-label label {
