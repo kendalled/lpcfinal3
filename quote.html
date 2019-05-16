@@ -11,6 +11,8 @@
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link href="assets/css/filepond.css" rel="stylesheet">
+	<link href="assets/css/filepond-plugin-image-preview.css" rel="stylesheet">
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
 
@@ -320,15 +322,11 @@
 
 									<h4>Design Notes (Optional):</h4>
 
-									<textarea name="Design Details (Lapel Pin)" id="Pin-message" placeholder="Enter your message"
-										rows="4"></textarea>
+									<textarea name="Design Details (Lapel Pin)" id="Pin-message" placeholder="Enter your message" rows="4"></textarea>
 
 								</div>
-
-								<div class="col-12 col-12-xsmall file-input-wrapper" id="file-input">
-									<label for="upload-file" class="file-input-button icon fa-upload"> Upload File</label>
-									<input id="upload-file" type="file" name="image" />
-									<label for="upload-file" data-js-label style="float: right;">No File Selected</label>
+								<div class="col-12 col-12-xsmall">
+									<input type="file" class="my-pond" name="filepond" multiple />
 								</div>
 
 								<!-- Break -->
@@ -613,11 +611,7 @@
 
 								</div>
 
-								<div class="col-12 col-12-xsmall file-input-wrapper" id="file-input">
-									<label for="upload-file" class="file-input-button icon fa-upload"> Upload File</label>
-									<input id="upload-file" type="file" name="image" />
-									<label for="upload-file" data-js-label style="float: right;">No File Selected</label>
-								</div>
+								<!-- File input for challenge coins -->
 
 								<!-- Break -->
 								<div class="col-12">
@@ -710,11 +704,7 @@
 
 								</div>
 
-								<div class="col-12 col-12-xsmall file-input-wrapper" id="file-input">
-									<label for="upload-file" class="file-input-button icon fa-upload"> Upload File</label>
-									<input id="upload-file" type="file" name="image" />
-									<label for="upload-file" data-js-label style="float: right;">No File Selected</label>
-								</div>
+								<!-- file input for keychain -->
 
 								<!-- Break -->
 								<div class="col-12">
@@ -772,13 +762,12 @@
 					<div class="testimonial">
 
 						<h3>Experience with Clients Big & Small.</h3>
-						<blockquote><b>" Lapel Pins & Coins has helped me design a wonderful pin.<br />I'll be back
-								soon!
+						<blockquote><b>" Lapel Pins & Coins has helped me design a wonderful pin.<br />I'll be back soon!
 								"<br /><br />~ Eleanor M. (Queens, NY)</b></blockquote>
 						<h3>Incredible Service for Over 20 Years.</h3>
 						<div id="customer-logos">
-
-
+							<a title="Links to email support." href="mailto:info@lapelpinsandcoins.com" class="customer-logo-link noUL">
+								<span class="buttonC">Email Customer Support</span>
 								<ul class="list">
 									<li><img alt="ATT Logo" data-src="images/logos/att.svg" class="lazyload">
 									</li>
@@ -788,11 +777,8 @@
 									</li>
 									<li><img alt="Reebok Logo" data-src="images/logos/reebok.svg" class="lazyload">
 									</li>
-									<li><img alt="GMC Logo" data-src="images/logos/united.svg" class="lazyload">
-									</li>
-
 								</ul>
-							
+							</a>
 							<br />
 
 						</div>
@@ -967,26 +953,25 @@
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/lazysizes.min.js" async></script>
 	<script src="assets/js/stepform.min.js"></script>
-	<!--<script>
-		var inputs = document.querySelectorAll('#file-input')
-		for (var i = 0, len = inputs.length; i < len; i++) {
-			customInput(inputs[i])
-		}
+	<!-- include FilePond library -->
+	<script src="https://unpkg.com/filepond/dist/filepond.js"></script>
 
-		function customInput(el) {
-			const fileInput = el.querySelector('[type="file"]')
-			const label = el.querySelector('[data-js-label]')
+	<!-- include FilePond plugins -->
+	<script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
 
-			fileInput.onchange =
-				fileInput.onmouseout = function () {
-					if (!fileInput.value) return
+	<!-- include FilePond jQuery adapter -->
+	<script src="https://unpkg.com/jquery-filepond/filepond.jquery.js"></script>
 
-					var value = fileInput.value.replace(/^.*[\\\/]/, '')
-					el.className += ' -chosen'
-					label.innerText = "✓ " + value
-				}
-		}
-	</script>-->
+	<script>
+		// Register the plugin with FilePond
+		FilePond.registerPlugin(FilePondPluginImagePreview);
+
+		// Get a reference to the file input element
+		const inputElement = document.querySelector('input[type="file"]');
+
+		// Create the FilePond instance
+		const pond = FilePond.create(inputElement);
+	</script>
 
 	<!--
 	<script type='text/javascript'>
