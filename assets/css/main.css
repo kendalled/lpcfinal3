@@ -37,6 +37,9 @@ body {
 .stepimages {
 	max-width: 7rem;
 }
+.nopadding {
+	padding-top: 0 !important;
+}
 #pricing h2 {
 	text-align: center;
 }
