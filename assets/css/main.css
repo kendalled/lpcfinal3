@@ -3110,8 +3110,8 @@ input, select, textarea {
 			@media screen and (min-width: 1200px){
 				.image.left img,
 				.image.right img {
-					width: 70%;
-					margin-left: 3rem;
+					width: 90%;
+					margin-left: 2.5rem;
 				}
 			}
 
