@@ -4687,10 +4687,10 @@ a.icon.alt2:hover:before {
 
 				#banner:before {
 					pointer-events: none;
-					-moz-transition: opacity .5s ease-in-out 0.5s;
-					-webkit-transition: opacity .5s ease-in-out 0.5s;
-					-ms-transition: opacity .5s ease-in-out 0.5s;
-					transition: opacity .5s ease-in-out 0.5s;
+					-moz-transition: opacity .75s ease-in-out .75s;
+					-webkit-transition: opacity .75s ease-in-out .75s;
+					-ms-transition: opacity .75s ease-in-out .75s;
+					transition: opacity .75s ease-in-out .75s;
 					background: #333333;
 					content: '';
 					height: 100%;
