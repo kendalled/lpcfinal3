@@ -612,7 +612,14 @@
 
 								</div>
 
-								<!-- File input for challenge coins -->
+								<h4>Front Side:</h4>
+								<div class="col-12 col-12-xsmall nopadding">
+									<input type="file" class="my-pond" name="filepond2" id="filepond2" multiple />
+								</div>
+								<h4>Back Side:</h4>
+								<div class="col-12 col-12-xsmall nopadding">
+									<input type="file" class="my-pond" name="filepond3" id="filepond3" multiple />
+								</div>
 
 								<!-- Break -->
 								<div class="col-12">
@@ -967,8 +974,16 @@
 		// Get a reference to the file input element
 		const inputElement = document.querySelector('input[type="file"]');
 
+		const inputElement2 = document.getElementById('filepond2');
+
+		const inputElement3 = document.getElementById('filepond3');
+
 		// Create the FilePond instance
 		const pond = FilePond.create(inputElement);
+		const pond2 = FilePond.create(inputElement2);
+		const pond3 = FilePond.create(inputElement3);
+
+
 	</script>
 
 	<!--
