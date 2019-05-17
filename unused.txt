@@ -58,3 +58,18 @@
   </ul>
 </section>
 -->
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "url": "http://www.lapelpinsandcoins.com",
+  "logo": "https://lapelpinsandcoins.com/wp-content/uploads/2018/07/logosite.png",
+  "contactPoint": [{
+    "@type": "ContactPoint",
+    "telephone": "+1-844-395-4464",
+    "email": "info@lapelpinsandcoins.com",
+    "contactType": "customer service"
+  }]
+}
+</script>
