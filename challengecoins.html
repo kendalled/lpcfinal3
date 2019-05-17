@@ -65,6 +65,8 @@
 						</ul>
 				</section>
 
+
+
 				<!-- Mini Posts -->
 				<section id="designs">
 					<header>
@@ -104,6 +106,23 @@
 						<li><img src="images/coins/cutout.png" class="lazyload"></li>
 					</ul>
 				</section>
+
+				<section>
+
+
+					<h2>Crafted with Pride & Tradition.</h2>
+					<p>
+						<span class="image left productpage" style="max-width: 12rem;"><img src="images/coins/police1.png" alt="Picture of police challenge coin."></span>
+							Our quality challenge coins are produced with industry-leading techinques. Veterans and collectors alike love our products for their authenticity.<br/><br/>We use 100% stainless steel molds, and individually print each coin. Decades of experience in both lapel pins and challenge coins allows us to ship your order with both quality & speed.<br/><br/>Our designers are ready to make your next challenge coin.<br/>Get started today with a free quote request - no obligation.
+					</p>
+
+						<ul class="actions fixed">
+							<li><a href="quote.html" class="button" title="Links to quote page.">Free Quote</a></li>
+							<li><a href="#" class="button alt">Contact Us</a></li>
+						</ul>
+				</section>
+
+
 
 				<!-- Mini Posts -->
 				<section id="pricing">
@@ -149,8 +168,9 @@
 					    </tbody>
 					  </table>
 					</div>
-					<br/>
+					<hr/>
 					<div id="sizing">
+						<header><h2>Sizing Chart</h2></header>
 					  <img class="sizing" src="images/sizing.png" alt="Chart to show sizing of challenge coins" />
 					</div>
 
@@ -176,13 +196,13 @@
 						<h2>Free Quote Request</h2>
 						<p>Submit a free quote request.<br/> No commitment necessary!</p>
 					</a>
-					<a href="#designs" class="accent2" title="Snaps to pricing table below.">
+					<a href="#" class="accent2 scrolly1" title="Snaps to pricing table below.">
 						<h2>Plating & Custom Edges</h2>
 						<p>Take a look at the various customizations we offer.</p>
 					</a>
-					<a href="#pricing" class="accent3" title="Snaps to pricing table below.">
-						<h2>Pricing</h2>
-						<p>Take a look at the various challenge coins we offer.</p>
+					<a href="#" class="accent3 scrolly2" title="Snaps to pricing table below.">
+						<h2>Pricing & Sizing</h2>
+						<p>Take a look at our pricing table & sizing chart.</p>
 					</a>
 
 				</section>
@@ -303,6 +323,18 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/lazysizes.min.js" async></script>
+	<script>
+	$(".scrolly1").click(function() {
+     $('html, body').animate({
+         scrollTop: $("#designs").offset().top
+     }, 1000);
+ });
+ $(".scrolly2").click(function() {
+		$('html, body').animate({
+				scrollTop: $("#pricing").offset().top
+		}, 1000);
+});
+	</script>
 
 
 
