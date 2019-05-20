@@ -328,6 +328,7 @@
 								<h4>Reference Files:</h4>
 								<div class="col-12 col-12-xsmall nopadding">
 									<input type="file" class="my-pond" name="filepond" id="filepond1" multiple />
+									<input type="text" id="hiddenbase64" name="hiddenbase64" style="display: none;" />
 								</div>
 
 								<!-- Break -->
@@ -988,6 +989,7 @@
 
 		const pond2 = FilePond.create(inputElement2);
 		const pond3 = FilePond.create(inputElement3);
+		pond.onaddfile = (file) => { $("#hiddenbase64").val(file.getFileEncodeDataURL); };
 
 	</script>
 
