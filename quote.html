@@ -964,17 +964,17 @@
 
 	<!-- include FilePond plugins -->
 	<script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
-	<script src="https://unpkg.com/filepond-plugin-file-encode/dist/filepond-plugin-file-encode.js"></script>
 
 	<!-- include FilePond jQuery adapter -->
 	<script src="https://unpkg.com/jquery-filepond/filepond.jquery.js"></script>
 
 	<script>
-		// Register the pluginss with FilePond
-		FilePond.registerPlugin(FilePondPluginFileEncode);
+		// Register the plugins with FilePond
 
 		FilePond.registerPlugin(FilePondPluginImagePreview);
-
+		FilePond.setOptions({
+			server: 'api/forms/pinForm'
+		});
 
 
 		// Get a reference to the file input element
@@ -989,8 +989,6 @@
 
 		const pond2 = FilePond.create(inputElement2);
 		const pond3 = FilePond.create(inputElement3);
-		pond.onaddfile = (file) => { $("#hiddenbase64").val(file.getFileEncodeDataURL); };
-
 	</script>
 
 
