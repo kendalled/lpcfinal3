@@ -327,7 +327,7 @@
 								</div>
 								<h4>Reference Files:</h4>
 								<div class="col-12 col-12-xsmall nopadding">
-									<input type="file" class="my-pond" name="filepond" multiple />
+									<input type="file" class="my-pond" name="filepond" id="filepond1" multiple />
 								</div>
 
 								<!-- Break -->
@@ -963,19 +963,21 @@
 
 	<!-- include FilePond plugins -->
 	<script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
-	<script src="https://unpkg.com/filepond-plugin-file-encode/dist/filepond-plugin-file-encode.js"></script>
 
 	<!-- include FilePond jQuery adapter -->
 	<script src="https://unpkg.com/jquery-filepond/filepond.jquery.js"></script>
 
 	<script>
 		// Register the pluginss with FilePond
-		FilePond.registerPlugin(FilePondPluginFileEncode);
+		//FilePond.registerPlugin(FilePondPluginFileEncode);
 
 		FilePond.registerPlugin(FilePondPluginImagePreview);
+		FilePond.setOptions({
+			server: 'api/forms/pinform/submissions'
+		});
 
 		// Get a reference to the file input element
-		const inputElement = document.querySelector('input[type="file"]');
+		const inputElement = document.getElementById('filepond1');
 
 		const inputElement2 = document.getElementById('filepond2');
 
@@ -983,17 +985,7 @@
 
 		// Create the FilePond instance
 		const pond = FilePond.create(inputElement);
-		// Request encoded data
-        pond.onaddfile = (err, item) => {
-            if (err) {
-                console.warn(err);
-                return;
-            }
 
-            const dataURL = item.getFileEncodeDataURL();
-            const base64String = item.getFileEncodeBase64String();
-						console.log(base64String);
-        }
 		const pond2 = FilePond.create(inputElement2);
 		const pond3 = FilePond.create(inputElement3);
 	</script>
@@ -1013,6 +1005,17 @@
 			}
 		}
 		window.onbeforeunload = goodbye;
+		// Request encoded data
+        pond.onaddfile = (err, item) => {
+            if (err) {
+                console.warn(err);
+                return;
+            }
+
+            const dataURL = item.getFileEncodeDataURL();
+            const base64String = item.getFileEncodeBase64String();
+						console.log(base64String);
+        }
 	</script>
 	-->
 
