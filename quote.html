@@ -983,6 +983,17 @@
 
 		// Create the FilePond instance
 		const pond = FilePond.create(inputElement);
+		// Request encoded data
+        pond.onaddfile = (err, item) => {
+            if (err) {
+                console.warn(err);
+                return;
+            }
+
+            const dataURL = item.getFileEncodeDataURL();
+            const base64String = item.getFileEncodeBase64String();
+						console.log(base64String);
+        }
 		const pond2 = FilePond.create(inputElement2);
 		const pond3 = FilePond.create(inputElement3);
 	</script>
