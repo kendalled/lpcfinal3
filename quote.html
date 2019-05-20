@@ -987,7 +987,7 @@
 
 		const pond2 = FilePond.create(inputElement2);
 		const pond3 = FilePond.create(inputElement3);
-		pond.onprocessfile = (error, file) => { console.log('done', file.serverId) };
+		pond.onaddfile = (error, file) => { console.log('done', file.name) };
 	</script>
 
 
