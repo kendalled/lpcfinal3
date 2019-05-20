@@ -964,6 +964,7 @@
 
 	<!-- include FilePond plugins -->
 	<script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+	<script src="https://unpkg.com/filepond-plugin-file-encode/dist/filepond-plugin-file-encode.js"></script>
 
 	<!-- include FilePond jQuery adapter -->
 	<script src="https://unpkg.com/jquery-filepond/filepond.jquery.js"></script>
@@ -972,8 +973,10 @@
 		// Register the plugins with FilePond
 
 		FilePond.registerPlugin(FilePondPluginImagePreview);
+		FilePond.registerPlugin(FilePondPluginFileEncode);
+
 		FilePond.setOptions({
-			server: 'https://lapelpinsandcoins-5f3f1.appspot.com/quotes'
+			server: 'gs://lapelpinsandcoins-5f3f1.appspot.com/quotes'
 		});
 
 
