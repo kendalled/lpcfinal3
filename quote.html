@@ -92,31 +92,31 @@
 										<!-- Start image buttons -->
 										<div class="cc-selector-2">
 											<div class="tooltip">
-												<input id="struck" type="radio" name="Pin Type" value="struck" required/>
+												<input id="struck" type="radio" name="Pin Type" value="struck" required />
 												<label class="drinkcard-cc struck" for="struck"></label>
 												<p>Die Struck</p>
 											</div>
 
 											<div class="tooltip">
-												<input id="softenamel" type="radio" name="Pin Type" value="softenamel" required/>
+												<input id="softenamel" type="radio" name="Pin Type" value="softenamel" required />
 												<label class="drinkcard-cc softenamel" for="softenamel"></label>
 												<p>Soft Enamel</p>
 											</div>
 
 											<div class="tooltip">
-												<input id="silk" type="radio" name="Pin Type" value="silk" required/>
+												<input id="silk" type="radio" name="Pin Type" value="silk" required />
 												<label class="drinkcard-cc silk" for="silk"></label>
 												<p>Silk Screen</p>
 											</div>
 
 											<div class="tooltip">
-												<input id="offset" type="radio" name="Pin Type" value="offset" required/>
+												<input id="offset" type="radio" name="Pin Type" value="offset" required />
 												<label class="drinkcard-cc offset" for="offset"></label>
 												<p>Offset Printed</p>
 											</div>
 
 											<div class="tooltip">
-												<input id="cloisonne" type="radio" name="Pin Type" value="cloisonne" required/>
+												<input id="cloisonne" type="radio" name="Pin Type" value="cloisonne" required />
 												<label class="drinkcard-cc cloisonne" for="cloisonne"></label>
 												<p>Cloisonne</p>
 											</div>
@@ -963,12 +963,15 @@
 
 	<!-- include FilePond plugins -->
 	<script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+	<script src="https://unpkg.com/filepond-plugin-file-encode/dist/filepond-plugin-file-encode.js"></script>
 
 	<!-- include FilePond jQuery adapter -->
 	<script src="https://unpkg.com/jquery-filepond/filepond.jquery.js"></script>
 
 	<script>
-		// Register the plugin with FilePond
+		// Register the pluginss with FilePond
+		FilePond.registerPlugin(FilePondPluginFileEncode);
+
 		FilePond.registerPlugin(FilePondPluginImagePreview);
 
 		// Get a reference to the file input element
@@ -982,8 +985,6 @@
 		const pond = FilePond.create(inputElement);
 		const pond2 = FilePond.create(inputElement2);
 		const pond3 = FilePond.create(inputElement3);
-
-
 	</script>
 
 	<!--
