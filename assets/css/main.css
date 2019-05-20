@@ -37,6 +37,9 @@ body {
 .stepimages {
 	max-width: 7rem;
 }
+.hiddenfile {
+	display: none;
+}
 .nopadding {
 	padding-top: 0 !important;
 }

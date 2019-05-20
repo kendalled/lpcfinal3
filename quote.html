@@ -963,13 +963,14 @@
 
 	<!-- include FilePond plugins -->
 	<script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+	<script src="https://unpkg.com/filepond-plugin-file-encode/dist/filepond-plugin-file-encode.js"></script>
 
 	<!-- include FilePond jQuery adapter -->
 	<script src="https://unpkg.com/jquery-filepond/filepond.jquery.js"></script>
 
 	<script>
 		// Register the pluginss with FilePond
-		//FilePond.registerPlugin(FilePondPluginFileEncode);
+		FilePond.registerPlugin(FilePondPluginFileEncode);
 
 		FilePond.registerPlugin(FilePondPluginImagePreview);
 
@@ -987,7 +988,7 @@
 
 		const pond2 = FilePond.create(inputElement2);
 		const pond3 = FilePond.create(inputElement3);
-		pond.onaddfile = (error, file) => { console.log('done', file.getFile()) };
+
 	</script>
 
 
