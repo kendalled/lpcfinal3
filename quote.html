@@ -992,7 +992,7 @@
 		var form = document.forms.namedItem("pinForm");
 		form.addEventListener('submit', function(ev) {
 
-			var oOutput = document.querySelector("dataDiv"),
+			var oOutput = document.getElementById('dataDiv'),
 				oData = new FormData(form);
 
 			oData.append("CustomField", "This is some extra data");
