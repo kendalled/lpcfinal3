@@ -1,0 +1,1031 @@
+<!doctype html>
+<!--
+	Lapel Pins and Coins
+-->
+<html lang="en">
+
+<head>
+	<title>Free Quote Request - Lapel Pins and Coins</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+	<meta name="description" content="Our order form couldn't be easier. Checkout is a breeze for lapel pins, challenge coins, or keychains!" />
+	<meta name="keywords" content="" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link href="assets/css/filepond.css" rel="stylesheet">
+	<link href="assets/css/filepond-plugin-image-preview.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i&display=swap" rel="stylesheet"/>
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+</head>
+
+<body class="is-preload">
+
+	<!-- Header -->
+	<header id="header">
+		<div class="inner">
+			<a href="index.html"><img class="logo" src="images/lapel.png" alt="PNG Logo for Lapel Pins & Coins."></a>
+			<nav id="nav">
+				<ul>
+
+					<li>
+						<a href="lapelpins.html">Lapel Pins</a>
+					</li>
+					<li><a href="challengecoins.html">Challenge Coins</a></li>
+					<li><a href="keychains.html">Keychains</a></li>
+					<li><a href="quote.html">Free Quote</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Main -->
+	<div id="main">
+		<div class="inner">
+
+			<!-- Content -->
+			<div id="content">
+				<section id="quoteform">
+					<ul class="actions fixed">
+						<li><a href="#" class="button icon fa-arrow-left fit small" id="rstbtn">Back</a></li>
+					</ul>
+					<div id="choice">
+						<header style="text-align: center;">
+							<h1>Free Quote Request</h1>
+
+							<p>Select a product below to get started.</p>
+						</header>
+
+						<ul class="imgbtns">
+							<li><input alt="Selects the lapel pins option" type="image" src="images/homePins.png" name="LapelPin" id="LapelPin" />
+								<label for="LapelPin">Lapel Pins</label></li>
+							<li><input alt="Selects the challenge coins option" type="image" src="images/homeCoins.png" name="ChallengeCoin" id="ChallengeCoin" />
+								<label for="ChallengeCoin">Challenge Coins</label></li>
+							<li><input alt="Selects the keychains option" type="image" src="images/homeChains.png" name="Keychain" id="Keychain" />
+								<label for="Keychain">Keychains</label></li>
+						</ul>
+					</div>
+					<!-- Lapel Pin Selection -->
+					<!-- Hidden Lapel Pin Form -->
+					<div id="pinform">
+						<h2 style="text-align: center;">Lapel Pin Quote Request</h2>
+						<form name="pinForm" data-netlify="true" action="/thanks.html" method="post" enctype="multipart/form-data">
+							<h4>Contact Info:</h4>
+							<div class="row gtr-uniform">
+
+								<!-- First Name -->
+								<div class="col-12 col-12-xsmall">
+									<input type="text" name="Full Name (Pin)" id="Pin-FullName" value="" placeholder="Full Name" required>
+								</div>
+
+								<!-- Email -->
+								<div class="col-6 col-12-xsmall">
+									<input type="email" name="Email (Pin)" id="Pin-email" value="" placeholder="Email" required>
+								</div>
+								<!-- Phone Number -->
+								<div class="col-6 col-12-xsmall">
+									<input type="tel" name="Phone (pin)" id="Pin-phone" value="" placeholder="Phone Number" required>
+								</div>
+
+								<!-- Break -->
+								<div class="col-12" style="padding-bottom: 2em;">
+
+									<h4>Select a Pin Style:</h4>
+									<div id="styleChoice">
+										<!-- Start image buttons -->
+										<div class="cc-selector-2">
+											<div class="tooltip">
+												<input id="struck" type="radio" name="Pin Type" value="struck" required />
+												<label class="drinkcard-cc struck" for="struck"></label>
+												<p>Die Struck</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="softenamel" type="radio" name="Pin Type" value="softenamel" required />
+												<label class="drinkcard-cc softenamel" for="softenamel"></label>
+												<p>Soft Enamel</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="silk" type="radio" name="Pin Type" value="silk" required />
+												<label class="drinkcard-cc silk" for="silk"></label>
+												<p>Silk Screen</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="offset" type="radio" name="Pin Type" value="offset" required />
+												<label class="drinkcard-cc offset" for="offset"></label>
+												<p>Offset Printed</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="cloisonne" type="radio" name="Pin Type" value="cloisonne" required />
+												<label class="drinkcard-cc cloisonne" for="cloisonne"></label>
+												<p>Cloisonne</p>
+											</div>
+
+										</div>
+									</div>
+
+									<div id="pinSizing">
+										<hr />
+										<h4>Select Size:</h4>
+										<div class="cc-selector-2">
+											<div class="tooltip">
+												<input id="size075p" type="radio" name="Pin Sizing:" value="size075" />
+												<label class="drinkcard-cc size075p" for="size075p"></label>
+												<p>0.75"</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="size175p" type="radio" name="Pin Sizing:" value="size175" />
+												<label class="drinkcard-cc size175p" for="size175p"></label>
+												<p>1.75"</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="size200p" type="radio" name="Pin Sizing:" value="size200" />
+												<label class="drinkcard-cc size200p" for="size200p"></label>
+												<p>2.00"</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="size225p" type="radio" name="Pin Sizing:" value="size225" />
+												<label class="drinkcard-cc size225p" for="size225p"></label>
+												<p>2.25"</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="size250p" type="radio" name="Pin Sizing:" value="size250" />
+												<label class="drinkcard-cc size250p" for="size250p"></label>
+												<p>2.50"</p>
+											</div>
+
+										</div>
+									</div>
+
+									<!-- Pin Plating -->
+									<div id="pinPlating">
+										<hr />
+										<h4>Select Plating:</h4>
+										<div class="cc-selector-2">
+											<div class="tooltip">
+												<input id="polishedGoldp" type="radio" name="Pin Plating:" value="polishedGold" />
+												<label class="drinkcard-cc polishedGoldp" for="polishedGoldp"></label>
+												<p>Polished Gold: Free</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="polishedSilverp" type="radio" name="Pin Plating:" value="polishedSilver" />
+												<label class="drinkcard-cc polishedSilverp" for="polishedSilverp"></label>
+												<p>Polished Silver: Free</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="polishedCopperp" type="radio" name="Pin Plating:" value="polishedCopper" />
+												<label class="drinkcard-cc polishedCopperp" for="polishedCopperp"></label>
+												<p>Polished Copper: Free</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="polishedNickelp" type="radio" name="Pin Plating:" value="polishedNickel" />
+												<label class="drinkcard-cc polishedNickelp" for="polishedNickelp"></label>
+												<p>Polished Nickel: Free</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="polishedBlackp" type="radio" name="Pin Plating:" value="polishedBlack" />
+												<label class="drinkcard-cc polishedBlackp" for="polishedBlackp"></label>
+												<p>Polished Black: Free</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="antiqueGoldp" type="radio" name="Pin Plating:" value="antiqueGold" />
+												<label class="drinkcard-cc antiqueGoldp" for="antiqueGoldp"></label>
+												<p>Antique Gold: $0.40</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="antiqueSilverp" type="radio" name="Pin Plating:" value="antiqueSilver" />
+												<label class="drinkcard-cc antiqueSilverp" for="antiqueSilverp"></label>
+												<p>Antique Silver: $0.35</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="antiqueCopperp" type="radio" name="Pin Plating:" value="antiqueCopper" />
+												<label class="drinkcard-cc antiqueCopperp" for="antiqueCopperp"></label>
+												<p>Antique Copper: $0.30</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="dualp" type="radio" name="Pin Plating:" value="dual" />
+												<label class="drinkcard-cc dualp" for="dualp"></label>
+												<p>Dual-Plated: $0.70</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="colorCoatedp" type="radio" name="Pin Plating:" value="colorCoated" />
+												<label class="drinkcard-cc colorCoatedp" for="colorCoatedp"></label>
+												<p>Color Coated: $0.25</p>
+											</div>
+
+
+
+										</div>
+									</div>
+
+									<!-- Bezel Choice -->
+									<div id="pinBacking">
+										<hr />
+										<h4>Select a Pin Backing:</h4>
+										<div class="cc-selector-2">
+											<div class="tooltip">
+												<input id="butterfly" type="radio" name="Pin Backing:" value="butterfly" />
+												<label class="drinkcard-cc butterfly" for="butterfly"></label>
+												<p>Butterfly Clutch: Free</p>
+											</div>
+											<div class="tooltip">
+												<input id="blackrubber" type="radio" name="Pin Backing:" value="blackrubber" />
+												<label class="drinkcard-cc blackrubber" for="blackrubber"></label>
+												<p>Black Rubber: Free</p>
+											</div>
+											<div class="tooltip">
+												<input id="yellowrubber" type="radio" name="Pin Backing:" value="yellowrubber" />
+												<label class="drinkcard-cc yellowrubber" for="yellowrubber"></label>
+												<p>Yellow Rubber: Free</p>
+											</div>
+											<div class="tooltip">
+												<input id="jewelry" type="radio" name="Pin Backing:" value="jewelry" />
+												<label class="drinkcard-cc jewelry" for="jewelry"></label>
+												<p>Jewelry Clutch: Free</p>
+											</div>
+											<div class="tooltip">
+												<input id="cufflink" type="radio" name="Pin Backing:" value="cufflink" />
+												<label class="drinkcard-cc cufflink" for="cufflink"></label>
+												<p>Cufflink: $0.75</p>
+											</div>
+
+										</div>
+									</div>
+
+									<!--  Pin Packaging -->
+									<div id="pinPackaging">
+										<hr />
+										<h4>Select Pin Packaging:</h4>
+										<div class="cc-selector-2">
+											<div class="tooltip">
+												<input id="polyp" type="radio" name="Pin Packaging:" value="poly" />
+												<label class="drinkcard-cc polyp" for="polyp"></label>
+												<p>Poly Bag: Free</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="velvetp" type="radio" name="Pin Packaging:" value="velvet" />
+												<label class="drinkcard-cc velvetp" for="velvetp"></label>
+												<p>Velvet Bag: $0.55</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="velvetCasep" type="radio" name="Pin Packaging:" value="velvetCase" />
+												<label class="drinkcard-cc velvetCasep" for="velvetCasep"></label>
+												<p>Velvet Case: $4.00</p>
+											</div>
+
+
+											<div class="tooltip">
+												<input id="acrylicCasep" type="radio" name="Pin Packaging:" value="acrylicCase" />
+												<label class="drinkcard-cc acrylicCasep" for="acrylicCasep"></label>
+												<p>Acrylic Case: $1.00</p>
+											</div>
+
+										</div>
+										<hr />
+									</div>
+
+									<br />
+
+
+									<!-- End Image Buttons -->
+									<h4>Select Quantity:</h4>
+									<select name="Quantity of Pin" class="demo-category" required>
+										<option value="">- Quantity -</option>
+										<option value="100">100</option>
+										<option value="200">200</option>
+										<option value="300">300</option>
+										<option value="400">400</option>
+										<option value="500">500</option>
+										<option value="600">600</option>
+										<option value="700">700</option>
+										<option value="800">800</option>
+										<option value="900">900</option>
+										<option value="1000">1000</option>
+										<option value="1500">1500+</option>
+									</select>
+									<br />
+
+									<h4>Design Notes (Optional):</h4>
+
+									<textarea name="Design Details (Lapel Pin)" id="Pin-message" placeholder="Enter your message" rows="4"></textarea>
+
+								</div>
+								<h4>Reference Files:</h4>
+								<div class="col-12 col-12-xsmall nopadding">
+									<input type="file" class="my-pond" name="filepond" id="filepond1" multiple />
+									<input type="text" id="hiddenbase64" name="hiddenbase64" style="display: none;" />
+								</div>
+
+								<!-- Break -->
+								<div class="col-12">
+									<ul class="actions">
+										<li><input type="submit" value="Submit" class="primary"></li>
+										<li><input type="reset" class="alt" value="Reset"></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</div>
+
+					<!-- End Lapel Pin Selection -->
+					<!-- Hidden Challenge Coin Form -->
+					<div id="coinform">
+						<h2 style="text-align: center;">Challenge Coin Quote Request</h2>
+						<form name="CoinForm" data-netlify="true" method="post">
+							<h4>Contact Info:</h4>
+							<div class="row gtr-uniform">
+
+								<!-- First Name -->
+								<div class="col-12 col-12-xsmall">
+									<input type="text" name="Full Name" id="Coin-FullName" value="" placeholder="Full Name" required>
+								</div>
+
+								<!-- Email -->
+								<div class="col-6 col-12-xsmall">
+									<input type="email" name="Email" id="Coin-email" value="" placeholder="Email" required>
+								</div>
+								<!-- Phone Number -->
+								<div class="col-6 col-12-xsmall">
+									<input type="tel" name="Phone" id="Coin-phone" value="" placeholder="Phone Number" required>
+								</div>
+
+								<!-- Break -->
+								<div class="col-12" style="padding-bottom: 2em;">
+
+									<h4>Select a Color Style:</h4>
+									<div id="colorChoice">
+										<!-- Start image buttons -->
+										<div class="cc-selector-2">
+											<div class="tooltip">
+												<input id="noColor" type="radio" name="Coin Type:" value="NoColorCoin" />
+												<label class="drinkcard-cc noColor" for="noColor"></label>
+												<p>No Color Fill</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="oneColor" type="radio" name="Coin Type:" value="OneColorCoin" />
+												<label class="drinkcard-cc oneColor" for="oneColor"></label>
+												<p>Color (One Side)</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="bothColor" type="radio" name="Coin Type:" value="BothColorCoin" />
+												<label class="drinkcard-cc bothColor" for="bothColor"></label>
+												<p>Color (Both Sides)</p>
+											</div>
+										</div>
+									</div>
+
+									<div id="coinSizing">
+										<hr />
+										<h4>Select Size:</h4>
+										<div class="cc-selector-2">
+
+											<div class="tooltip">
+												<input id="size175" type="radio" name="Coin Sizing:" value="size175" />
+												<label class="drinkcard-cc size175" for="size175"></label>
+												<p>1.75"</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="size200" type="radio" name="Coin Sizing:" value="size200" />
+												<label class="drinkcard-cc size200" for="size200"></label>
+												<p>2.00"</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="size225" type="radio" name="Coin Sizing:" value="size225" />
+												<label class="drinkcard-cc size225" for="size225"></label>
+												<p>2.25"</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="size250" type="radio" name="Coin Sizing:" value="size250" />
+												<label class="drinkcard-cc size250" for="size250"></label>
+												<p>2.50"</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="size275" type="radio" name="Coin Sizing:" value="size275" />
+												<label class="drinkcard-cc size275" for="size275"></label>
+												<p>2.75"</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="size300" type="radio" name="Coin Sizing:" value="size300" />
+												<label class="drinkcard-cc size300" for="size300"></label>
+												<p>3.00"</p>
+											</div>
+
+										</div>
+									</div>
+
+									<!-- Coin Plating -->
+									<div id="coinPlating">
+										<hr />
+										<h4>Select Plating:</h4>
+										<div class="cc-selector-2">
+											<div class="tooltip">
+												<input id="polishedGold" type="radio" name="Coin Plating:" value="PolishedGold" />
+												<label class="drinkcard-cc polishedGold" for="polishedGold"></label>
+												<p>Polished Gold: Free</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="polishedSilver" type="radio" name="Coin Plating:" value="polishedSilver" />
+												<label class="drinkcard-cc polishedSilver" for="polishedSilver"></label>
+												<p>Polished Silver: Free</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="polishedCopper" type="radio" name="Coin Plating:" value="polishedCopper" />
+												<label class="drinkcard-cc polishedCopper" for="polishedCopper"></label>
+												<p>Polished Copper: Free</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="polishedNickel" type="radio" name="Coin Plating:" value="polishedNickel" />
+												<label class="drinkcard-cc polishedNickel" for="polishedNickel"></label>
+												<p>Polished Nickel: Free</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="polishedBlack" type="radio" name="Coin Plating:" value="polishedBlack" />
+												<label class="drinkcard-cc polishedBlack" for="polishedBlack"></label>
+												<p>Polished Black: Free</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="antiqueGold" type="radio" name="Coin Plating:" value="antiqueGold" />
+												<label class="drinkcard-cc antiqueGold" for="antiqueGold"></label>
+												<p>Antique Gold: $0.40</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="antiqueSilver" type="radio" name="Coin Plating:" value="antiqueSilver" />
+												<label class="drinkcard-cc antiqueSilver" for="antiqueSilver"></label>
+												<p>Antique Silver: $0.35</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="antiqueCopper" type="radio" name="Coin Plating:" value="antiqueCopper" />
+												<label class="drinkcard-cc antiqueCopper" for="antiqueCopper"></label>
+												<p>Antique Copper: $0.30</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="dual" type="radio" name="Coin Plating:" value="dual" />
+												<label class="drinkcard-cc dual" for="dual"></label>
+												<p>Dual-Plated: $0.70</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="colorCoated" type="radio" name="Coin Plating:" value="colorCoated" />
+												<label class="drinkcard-cc colorCoated" for="colorCoated"></label>
+												<p>Color Coated: $0.25</p>
+											</div>
+
+
+
+										</div>
+									</div>
+
+									<!-- Bezel Choice -->
+									<div id="bezelChoice">
+										<hr />
+										<h4>Select a Coin Edge:</h4>
+										<div class="cc-selector-2">
+											<div class="tooltip">
+												<input id="plain" type="radio" name="Coin Edge:" value="plain" />
+												<label class="drinkcard-cc plain" for="plain"></label>
+												<p>Plain: Free</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="rope" type="radio" name="Coin Edge:" value="rope" />
+												<label class="drinkcard-cc rope" for="rope"></label>
+												<p>Rope: Free</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="spur" type="radio" name="Coin Edge:" value="spur" />
+												<label class="drinkcard-cc spur" for="spur"></label>
+												<p>Spur: $0.70</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="oblique" type="radio" name="Coin Edge:" value="oblique" />
+												<label class="drinkcard-cc oblique" for="oblique"></label>
+												<p>Oblique: $0.70</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="crosscut" type="radio" name="Coin Edge:" value="crosscut" />
+												<label class="drinkcard-cc crosscut" for="crosscut"></label>
+												<p>Crosscut: $0.70</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="bezeled" type="radio" name="Coin Edge:" value="bezeled" />
+												<label class="drinkcard-cc bezeled" for="bezeled"></label>
+												<p>Bezeled: $0.70</p>
+											</div>
+
+
+
+										</div>
+									</div>
+
+									<!-- Bezel Choice -->
+									<div id="packaging">
+										<hr />
+										<h4>Select Coin Packaging:</h4>
+										<div class="cc-selector-2">
+											<div class="tooltip">
+												<input id="poly" type="radio" name="Coin Packaging:" value="poly" />
+												<label class="drinkcard-cc poly" for="poly"></label>
+												<p>Poly Bag: Free</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="velvet" type="radio" name="Coin Packaging:" value="velvet" />
+												<label class="drinkcard-cc velvet" for="velvet"></label>
+												<p>Velvet Bag: $0.55</p>
+											</div>
+
+											<div class="tooltip">
+												<input id="velvetCase" type="radio" name="Coin Packaging:" value="velvetCase" />
+												<label class="drinkcard-cc velvetCase" for="velvetCase"></label>
+												<p>Velvet Case: $4.00</p>
+											</div>
+
+
+											<div class="tooltip">
+												<input id="acrylicCase" type="radio" name="Coin Packaging:" value="acrylicCase" />
+												<label class="drinkcard-cc acrylicCase" for="acrylicCase"></label>
+												<p>Acrylic Case: $1.00</p>
+											</div>
+
+										</div>
+										<hr />
+									</div>
+
+									<br />
+
+
+									<!-- End Image Buttons -->
+									<h4>Select Quantity:</h4>
+									<select name="Quantity of Coin" class="demo-category" required>
+										<option value="">- Quantity -</option>
+										<option value="50">50</option>
+										<option value="100">100</option>
+										<option value="200">200</option>
+										<option value="300">300</option>
+										<option value="400">400</option>
+										<option value="500">500</option>
+										<option value="600">600</option>
+										<option value="700">700</option>
+										<option value="800">800</option>
+										<option value="900">900</option>
+										<option value="1000">1000</option>
+										<option value="1500">1500+</option>
+									</select>
+									<br />
+
+									<h4>Design Notes (Optional):</h4>
+
+									<textarea name="Design Details" id="Coin-message" placeholder="Enter your message" rows="4"></textarea>
+
+								</div>
+
+								<h4>Front Side:</h4>
+								<div class="col-12 col-12-xsmall nopadding">
+									<input type="file" class="my-pond" name="filepond2" id="filepond2" multiple />
+								</div>
+								<h4>Back Side:</h4>
+								<div class="col-12 col-12-xsmall nopadding">
+									<input type="file" class="my-pond" name="filepond3" id="filepond3" multiple />
+								</div>
+
+								<!-- Break -->
+								<div class="col-12">
+									<ul class="actions">
+										<li><input type="submit" value="Submit" class="primary"></li>
+										<li><input type="reset" class="alt" value="Reset"></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</div>
+					<!-- End hidden coin form -->
+					<!-- Hidden keychain form -->
+					<div id="chainform">
+						<h2 style="text-align: center;">Keychain Quote Request</h2>
+						<form name="KeychainForm" data-netlify="true" method="post">
+							<h4>Contact Info:</h4>
+							<div class="row gtr-uniform">
+
+								<!-- First Name -->
+								<div class="col-6 col-12-xsmall">
+									<input type="text" name="First Name" id="Chain-Fname" value="" placeholder="First Name" required>
+								</div>
+								<!-- Last Name -->
+								<div class="col-6 col-12-xsmall">
+									<input type="text" name="Last Name" id="Chain-Lname" value="" placeholder="Last Name" required>
+								</div>
+								<!-- Email -->
+								<div class="col-6 col-12-xsmall">
+									<input type="email" name="Email" id="Chain-email" value="" placeholder="Email" required>
+								</div>
+								<!-- Phone Number -->
+								<div class="col-6 col-12-xsmall">
+									<input type="text" name="Phone" id="Chain-phone" value="" placeholder="Phone Number" required>
+								</div>
+
+								<!-- Break -->
+								<div class="col-12" style="padding-bottom: 2em;">
+
+									<h4>Select a Keychain Style:</h4>
+
+									<!-- Start image buttons -->
+									<div class="cc-selector-2">
+										<div class="tooltip">
+											<input id="offsetKeychain" type="radio" name="Keychain Type:" value="OffsetPrintedCoin" />
+											<label class="drinkcard-cc offsetKeychain" for="offsetKeychain"></label>
+										</div>
+
+										<div class="tooltip">
+											<input id="dieKeychain" type="radio" name="Keychain Type:" value="dieStruckKeychain" />
+											<label class="drinkcard-cc dieKeychain" for="dieKeychain"></label>
+										</div>
+
+										<div class="tooltip">
+											<input id="enamelKeychain" type="radio" name="Keychain Type:" value="enamelKeychain" />
+											<label class="drinkcard-cc enamelKeychain" for="enamelKeychain"></label>
+										</div>
+									</div>
+
+									<br />
+									<br />
+
+									<!-- End Image Buttons -->
+									<h4>Select Quantity & Size:</h4>
+									<select name="Quantity of Coin" class="demo-category" required>
+										<option value="">- Quantity -</option>
+										<option value="100">100</option>
+										<option value="200">200</option>
+										<option value="300">300</option>
+										<option value="400">400</option>
+										<option value="500">500+</option>
+									</select>
+									<br />
+
+									<select name="Size" class="demo-category" required>
+										<option value="">- Size -</option>
+										<option value="1.00 in.">1.00 in.</option>
+										<option value="2.00 in.">2.00 in.</option>
+										<option value="3.00 in.">3.00 in.</option>
+										<option value="4.00 in.">4.00 in.</option>
+										<option value="5.00 in.">5.00 in.</option>
+									</select>
+									<br />
+									<h4>Design Notes (Optional):</h4>
+
+									<textarea name="Design Details" id="Pin-message" placeholder="Enter your message" rows="4"></textarea>
+
+								</div>
+
+								<!-- file input for keychain -->
+
+								<!-- Break -->
+								<div class="col-12">
+									<ul class="actions">
+										<li><input type="submit" value="Submit" class="primary"></li>
+										<li><input type="reset" class="alt" value="Reset"></li>
+									</ul>
+								</div>
+							</div>
+						</form>
+					</div>
+					<!-- End hidden keychain form -->
+				</section>
+
+				<!-- Mini Posts -->
+				<section id="ordering">
+					<header>
+						<h2>Submit a Free Quote Request & Receive:</h2>
+					</header>
+					<h3></h3>
+					<div class="col-7 col-12-medium">
+						<div class="row gtr-200">
+							<div class="col-4 col-12-xsmall">
+								<ul class="check">
+									<li>
+										<div>Enamel Etching</div>
+									</li>
+									<li>
+										<div>Custom Edges</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-4 col-12-xsmall">
+								<ul class="check">
+									<li>
+										<div>24/7 Support</div>
+									</li>
+									<li>
+										<div>Tracking Info</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-4 col-12-xsmall">
+								<ul class="check">
+									<li>
+										<div>Display Boxes</div>
+									</li>
+									<li>
+										<div>Lifetime Warranty</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="testimonial">
+
+						<h3>Experience with Clients Big & Small.</h3>
+						<blockquote><b>" Lapel Pins & Coins has helped me design a wonderful pin.<br />I'll be back soon!
+								"<br /><br />~ Eleanor M. (Queens, NY)</b></blockquote>
+						<h3>Incredible Service for Over 20 Years.</h3>
+						<div id="customer-logos">
+							<a title="Links to email support." href="mailto:info@lapelpinsandcoins.com" class="customer-logo-link noUL">
+								<span class="buttonC">Email Customer Support</span>
+								<ul class="list">
+									<li><img alt="ATT Logo" data-src="images/logos/att.svg" class="lazyload">
+									</li>
+									<li><img alt="GMC Logo" data-src="images/logos/gmc.png" class="lazyload">
+									</li>
+									<li><img alt="Dell Logo" data-src="images/logos/dell.svg" class="lazyload">
+									</li>
+									<li><img alt="Reebok Logo" data-src="images/logos/reebok.svg" class="lazyload">
+									</li>
+								</ul>
+							</a>
+							<br />
+
+						</div>
+
+					</div>
+				</section>
+			</div>
+
+			<!-- Sidebar -->
+			<div id="sidebar">
+				<!-- Mini Posts (minimal) -->
+				<section class="mini-posts">
+					<header>
+						<h2>We make ordering simple.</h2>
+					</header>
+					<article class="ordering">
+						<div class="image">
+							<a href="#" title="Links to quote page."><img class="stepimages lazyload" data-src="images/PAPER.svg" alt="" /></a>
+						</div>
+						<div class="content">
+							<span>1</span>
+							<h3>Submit a quote request or contact us to get started.</h3>
+						</div>
+					</article>
+					<article class="ordering">
+						<div class="image">
+							<a href="#" title="Links to quote page."><img class="stepimages lazyload" data-src="images/COMPUTER.svg" alt="" /></a>
+						</div>
+						<div class="content">
+							<span>2</span>
+							<h3>Our team of designers will e-mail you a free art proof.</h3>
+						</div>
+					</article>
+					<article class="ordering">
+						<div class="image">
+							<a href="#" title="Links to quote page."><img class="stepimages lazyload" data-src="images/BOX.svg" alt="" /></a>
+						</div>
+						<div class="content">
+							<span>3</span>
+							<h3>Your items are shipped with speed & safety to your doorstep.</h3>
+						</div>
+					</article>
+					<header>
+						<h2>Eligible for a Discount?</h2>
+						<h3>Mention it at checkout for your savings.</h3>
+					</header>
+					<section class="mini-posts small">
+						<article>
+							<div class="image">
+								<a href="#" title="Links to quote page.">
+									<picture>
+										<source type="image/webp" data-srcset="images/discount20.webp">
+										<source type="image/png" data-srcset="images/discount20.png">
+										<img class="recent lazyload" data-src="images/discount20.png" alt="" />
+									</picture>
+								</a>
+							</div>
+
+							<div class="content">
+								<a href="#" title="Links to quote page.">A Competitor's Quote</a>
+								<div class="timestamp">Code: LPC20</div>
+							</div>
+						</article>
+						<article>
+							<div class="image">
+								<a href="#" title="Links to quote page.">
+									<picture>
+										<source type="image/webp" data-srcset="images/discount5.webp">
+										<source type="image/png" data-srcset="images/discount5.png">
+										<img class="recent lazyload" data-src="images/discount5.png" alt="" />
+									</picture>
+								</a>
+							</div>
+							<div class="content">
+								<a href="#" title="Links to quote page.">First Time Customers</a>
+								<div class="timestamp">Code: FIRSTORDER</div>
+							</div>
+						</article>
+						<article>
+							<div class="image">
+								<a href="#" title="Links to quote page.">
+									<picture>
+										<source type="image/webp" data-srcset="images/discount10.webp">
+										<source type="image/png" data-srcset="images/discount10.png">
+										<img class="recent lazyload" data-src="images/discount10.png" alt="" />
+									</picture>
+								</a>
+							</div>
+							<div class="content">
+								<a href="#" title="Links to quote page.">All Re-orders</a>
+								<div class="timestamp">Code: REORDER</div>
+							</div>
+						</article>
+
+						<article>
+							<div class="image">
+								<a href="#" title="Links to quote page.">
+									<picture>
+										<source type="image/webp" data-srcset="images/discount5.webp">
+										<source type="image/png" data-srcset="images/discount5.png">
+										<img class="recent lazyload" data-src="images/discount5.png" alt="" />
+									</picture>
+								</a>
+							</div>
+							<div class="content">
+								<a href="#" title="Links to quote page.">Same-Day Orders</a>
+								<div class="timestamp">Code: SAMEDAY</div>
+							</div>
+						</article>
+
+					</section>
+				</section>
+
+
+			</div>
+
+		</div>
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<div class="content">
+				<section>
+					<header>
+						<h2>Navigation</h2>
+					</header>
+					<ul class="alt">
+						<li><a href="#" title="Links to lapel pins page.">Lapel Pins</a></li>
+						<li><a href="#" title="Links to challenge coins page.">Challenge Coins</a></li>
+						<li><a href="#" title="Links to keychains page.">Keychains</a></li>
+						<li><a href="quote.html" title="Links to quote page.">Free Quote</a></li>
+						<li><a href="privacy.html" title="Links to privacy policy.">Privacy Policy</a></li>
+					</ul>
+				</section>
+
+				<section>
+					<header>
+						<h2>Get in touch</h2>
+					</header>
+					<ul class="contact-icons">
+						<li class="icon fa-map-marker">
+							<address>
+								Lapel Pins and Coins<br />
+								Winter Park, FL 32792
+							</address>
+						</li>
+						<li class="icon fa-envelope">
+							<a href="mailto:info@lapelpinsandcoins.com" title="Drafts an email to us." target="_blank">info@lapelpinsandcoins.com</a>
+						</li>
+						<li class="icon fa-twitter">
+							<a href="https://twitter.com/LapelPinsCoins" title="Links to twitter page." rel="noopener" target="_blank">@LapelPinsCoins</a>
+						</li>
+						<li class="icon fa-phone">
+							<a href="tel:+18443954464" title="Calls our phone number.">+1 (844) 395-4464</a>
+						</li>
+					</ul>
+				</section>
+			</div>
+			<div class="copyright">
+				&copy; 2019 Lapel Pins and Coins, LLC. All rights reserved. Developed by: KJ
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.dropotron.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/lazysizes.min.js" async></script>
+	<script src="assets/js/stepform.min.js"></script>
+	<!-- include FilePond library -->
+	<script src="https://unpkg.com/filepond/dist/filepond.js"></script>
+
+	<!-- include FilePond plugins -->
+	<script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.js"></script>
+	<script src="https://unpkg.com/filepond-plugin-file-encode/dist/filepond-plugin-file-encode.js"></script>
+
+	<!-- include FilePond jQuery adapter -->
+	<script src="https://unpkg.com/jquery-filepond/filepond.jquery.js"></script>
+
+	<script>
+		// Register the plugins with FilePond
+
+		FilePond.registerPlugin(FilePondPluginImagePreview);
+		FilePond.registerPlugin(FilePondPluginFileEncode);
+
+		FilePond.setOptions({
+			server: 'gs://lapelpinsandcoins-5f3f1.appspot.com/quotes'
+		});
+
+
+		// Get a reference to the file input element
+		const inputElement = document.getElementById('filepond1');
+
+		const inputElement2 = document.getElementById('filepond2');
+
+		const inputElement3 = document.getElementById('filepond3');
+
+		// Create the FilePond instance
+		const pond = FilePond.create(inputElement);
+
+		const pond2 = FilePond.create(inputElement2);
+		const pond3 = FilePond.create(inputElement3);
+	</script>
+
+
+
+	<!--
+	<script type='text/javascript'>
+		function goodbye(e) {
+			if (!e) e = window.event;
+			//e.cancelBubble is supported by IE - this will kill the bubbling process.
+			e.cancelBubble = true;
+			e.returnValue = 'You sure you want to leave?'; //This is displayed on the dialog
+
+			//e.stopPropagation works in Firefox.
+			if (e.stopPropagation) {
+				e.stopPropagation();
+				e.preventDefault();
+			}
+		}
+		window.onbeforeunload = goodbye;
+		// Request encoded data
+
+            if (err) {
+                console.warn(err);
+                return;
+            }
+
+            const dataURL = item.getFileEncodeDataURL();
+            const base64String = item.getFileEncodeBase64String();
+						console.log(base64String);
+        }
+	</script>
+	-->
+
+</body>
+
+</html>
