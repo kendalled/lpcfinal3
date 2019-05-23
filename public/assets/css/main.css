@@ -38,7 +38,7 @@ body {
 .stepimages {
 	max-width: 7rem;
 }
-.hiddenfile {
+#hiddenlink {
 	display: none;
 }
 .nopadding {
@@ -511,10 +511,14 @@ ul.check li>div {
 	border-radius: 100%;
 	color: #fff;
 	font-size: 1.5rem;
-	padding: .25rem .75rem;
+	padding: .2rem .75rem;
 	font-weight: 400;
 }
+.ordering:first-of-type span {
+	
+	padding: .2rem .9rem;
 
+}
 @media screen and (max-width: 580px){
 	#ordering {
 		display: none;
@@ -554,7 +558,7 @@ ul.check li>div {
 	background-position: left, top;
 	background-repeat: repeat, no-repeat;
 	background-size: auto, contain;
-	min-height: calc(15vh + 7rem);
+	min-height: calc(10vh + 2rem);
 	position: relative;
 	text-align: center;
 }
@@ -683,10 +687,10 @@ ul.check li>div {
 }
 #banner2:before {
 	pointer-events: none;
-	-moz-transition: opacity .25s ease-in-out 0.25s;
-	-webkit-transition: opacity .25s ease-in-out 0.25s;
-	-ms-transition: opacity .25s ease-in-out 0.25s;
-	transition: opacity .25s ease-in-out 0.25s;
+	-moz-transition: opacity .15s ease-in-out 0.15s;
+	-webkit-transition: opacity .25s ease-in-out 0.15s;
+	-ms-transition: opacity .25s ease-in-out 0.15s;
+	transition: opacity .15s ease-in-out 0.15s;
 	background: #333333;
 	content: '';
 	height: 100%;
@@ -697,10 +701,10 @@ ul.check li>div {
 	width: 100%;
 }
 #banner2 > .content {
-	-moz-transition: -moz-transform .5s ease-in-out, opacity .5s ease-in-out;
-	-webkit-transition: -webkit-transform .5s ease-in-out, opacity .5s ease-in-out;
-	-ms-transition: -ms-transform .5s ease-in-out, opacity .5s ease-in-out;
-	transition: transform .5s ease-in-out, opacity .5s ease-in-out;
+	-moz-transition: -moz-transform .25s ease-in-out, opacity .25s ease-in-out;
+	-webkit-transition: -webkit-transform .25s ease-in-out, opacity .25s ease-in-out;
+	-ms-transition: -ms-transform .25s ease-in-out, opacity .25s ease-in-out;
+	transition: transform .25s ease-in-out, opacity .25s ease-in-out;
 	position: relative;
 	z-index: 1;
 }
@@ -754,7 +758,7 @@ body.is-preload #banner2 > .content {
 	height: auto;
 }
 #choice h1 {
-	font-size: 2rem;
+	font-size: 2.3rem;
 }
 
 .mainpic {
@@ -939,7 +943,7 @@ input, select, textarea {
 	}
 
 	body, input, select, textarea {
-		font-family: "Lato", Arial, Helvetica, sans-serif;
+		font-family: "Google Sans", Arial, Helvetica, sans-serif;
 		font-weight: 300;
 		font-size: 1rem;
 		line-height: 1.65;

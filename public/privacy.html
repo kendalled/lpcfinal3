@@ -8,9 +8,9 @@
 	<title>Privacy Policy - Lapel Pins and Coins</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<meta name="description" content="Lapel Pins & Coins' Privacy Policy protects your data." />
+	<meta name="description" content="" />
 	<meta name="keywords" content="" />
-	<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i&display=swap" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Google+Sans:300,300i,400,400i&display=swap" rel="stylesheet" />
 
 	<link rel="stylesheet" href="assets/css/main.css" />
 </head>
@@ -61,6 +61,17 @@
 						<p>Effective: April 30, 2019</p>
 					</header>
 					<h2>Intro</h2>
+					
+
+					<!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+					<button style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:10px;font-size:1em; height: 2.25rem; line-height: 1.25rem;"
+						id="checkout-button-sku_F7FMQqjF5QVsg7" role="link">
+						Checkout
+					</button>
+
+					<div id="error-message"></div>
+
+					
 
 					<p>This Online Privacy Policy (“Privacy Policy”) explains how Lapel Pins and Coins, LLC (together with all subsidiaries and affiliates, “Lapel Pins and Coins”, “we” or “us”) handles personal information provided to us on websites controlled by
 						Lapel Pins and Coins that link to this Privacy Policy, including without limitation, https://lapelpinsandcoins.com, https://www.lapelpinsandcoins.com, (collectively, “Sites”). This Privacy Policy does not apply to Sites controlled by Lapel
@@ -397,6 +408,42 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/lazysizes.min.js" async></script>
+	<!-- Load Stripe.js on your website. -->
+	<script src="https://js.stripe.com/v3"></script>
+	
+
+	<script>
+		var stripe = Stripe('pk_test_IkcYxmDlhhsRpumdfwGtl35A00wmpkKudL');
+
+		var checkoutButton = document.getElementById('checkout-button-sku_F7FMQqjF5QVsg7');
+		checkoutButton.addEventListener('click', function () {
+			// When the customer clicks on the button, redirect
+			// them to Checkout.
+			stripe.redirectToCheckout({
+					items: [{
+						sku: 'sku_F7FMQqjF5QVsg7',
+						quantity: 1
+					}],
+
+					// Do not rely on the redirect to the successUrl for fulfilling
+					// purchases, customers may not always reach the success_url after
+					// a successful payment.
+					// Instead use one of the strategies described in
+					// https://stripe.com/docs/payments/checkout/fulfillment
+					successUrl: 'https://your-website.com/success',
+					cancelUrl: 'https://your-website.com/canceled',
+					customerEmail: 'alangonzalez@example.com',
+				})
+				.then(function (result) {
+					if (result.error) {
+						// If `redirectToCheckout` fails due to a browser or network
+						// error, display the localized error message to your customer.
+						var displayError = document.getElementById('error-message');
+						displayError.textContent = result.error.message;
+					}
+				});
+		});
+	</script>
 
 
 </body>
