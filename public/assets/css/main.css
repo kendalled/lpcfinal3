@@ -105,7 +105,7 @@ ul.check li>div {
 .platinglist li {
 		display: inline;
 }
-.platinglist li > *{
+.platinglist li > picture > img{
 	max-width: 9rem;
 	height: auto;
 	margin: 0.5rem auto;
@@ -123,6 +123,9 @@ ul.check li>div {
 	width: 44vw;
 	height: auto;
 	margin: 0 auto;
+}
+#sizing picture img {
+	max-width: 42vw;
 }
 
 .clogo {
