@@ -38,6 +38,70 @@ body {
 .stepimages {
 	max-width: 7rem;
 }
+/*Google Button*/
+.gButton {
+	margin: 50px auto;
+	width: 185px;
+	height: 40px;
+	border-radius: 2px;
+	position: relative;
+}
+
+.gButton .logoTile {
+	margin: -3px;
+}
+
+.gButton span {
+	font-family: 'Google Sans';
+	position: absolute;
+	color: white;
+	font-weight: 500;
+	font-size: 14px;
+	left: 50px;
+	padding-top: .5rem;
+	padding-bottom: 0;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	cursor: pointer;
+}
+
+.normal {
+	background: #4688f1;
+	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
+	transition: 1s;
+}
+
+.normal:hover {
+	background: #376ad3;
+	box-shadow: 0 4px 5px 0 rgba(70, 136, 241, 0.14), 0 1px 10px 0 rgba(70, 136, 241, 0.14), 0 2px 4px -1px rgba(70, 136, 241, 0.14);
+	transition: 1s;
+}
+
+.disabled {
+	background: rgba(0, 0, 0, 0.08);
+	transition: 1s;
+}
+
+.disabled span {
+	color: rgba(0, 0, 0, 0.4);
+	transition: 1s;
+}
+
+.normal img:nth-child(2) {
+	opacity: 0;
+	transition: opacity 1s;
+	display: none;
+}
+
+.disabled img:nth-child(1) {
+	opacity: 0;
+	transition: opacity 1s;
+	display: none;
+}
+/*End google button*/
 #hiddenlink {
 	display: none;
 }
@@ -111,7 +175,7 @@ ul.check li>div {
 	margin: 0.5rem auto;
 }
 @media screen and (max-width: 600px){
-	.platinglist li > *{
+	.platinglist li > picture > img{
 		max-width: 6rem;
 		height: auto;
 	}
@@ -147,7 +211,7 @@ ul.check li>div {
 }
 @media screen and (max-width: 720px){
 	.testimonial {
-		padding: 1.2em;
+		display: none;
 	}
 }
 .testimonial h3 {
@@ -171,7 +235,6 @@ ul.check li>div {
 }
 .customer-logo-link:hover .list {
 	opacity: 0.7;
-	transform: scale(0.95);
 	filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><f…ter id="filter"><feGaussianBlur stdDeviation="10" /></filter></svg>#filter');
 	filter: blur(10px);
 }
@@ -190,14 +253,14 @@ ul.check li>div {
 	color: #fff;
 	background: #002d5d;
 	text-decoration: none;
-	transition: all 0.2s ease;
+	transition: all 1s ease;
 	position: absolute;
 	z-index: 1;
 	left: 50%;
 
 	transform: translate(-50%, 5px) scale(0.95);
 	opacity: 0;
-	transition: 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+	transition: 1s cubic-bezier(0.19, 1, 0.22, 1);
 
 }
 .list {
@@ -742,12 +805,16 @@ body.is-preload #banner2 > .content {
 	}
 }
 @media screen and (max-width: 480px) {
-	#banner2 {
-		padding: 3rem 2rem 5rem 2rem;
-	}
+	
 }
 @media screen and (max-width: 480px) {
 	#banner2 br {
+		display: none;
+	}
+	#banner2 {
+		padding: 3rem 2rem 5rem 2rem;
+	}
+	#recentOrders {
 		display: none;
 	}
 }
@@ -766,7 +833,7 @@ body.is-preload #banner2 > .content {
 
 .mainpic {
 	border-radius: 6px;
-	max-width: 17em;
+	max-width: 15em;
 	height: auto;
 	margin: 0 auto;
 }
@@ -810,15 +877,19 @@ body.is-preload #banner2 > .content {
 	border-radius: 6px;
 	padding: 2em;
 	height: auto;
+	max-height: 37em;
 	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 	justify-content: center;
 	text-align: center;
 	max-width: 25rem;
 }
-.custom:hover {
-	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+@media screen and (min-width: 1280px) {
+	.custom:hover {
+		box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+	}
 }
+
 .vidcard{
 	background-color: #fff;
 	border-radius: 6px;
@@ -4123,13 +4194,19 @@ a.icon.alt2:hover:before {
 
 	section header {
 		margin-bottom: 2.5rem;
+		
 	}
+
 
 		section header h1 {
 			margin-bottom: 1rem;
 		}
 
 			section header h1 + p {
+				font-size: 1.75rem;
+				letter-spacing: -0.025em;
+			}
+			section header h2+p {
 				font-size: 1.75rem;
 				letter-spacing: -0.025em;
 			}
@@ -4544,7 +4621,7 @@ a.icon.alt2:hover:before {
 				-ms-justify-content: center;
 				justify-content: center;
 				background-attachment: fixed, fixed;
-				background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.85)), url("../../images/g01.jpg");
+				background-image: linear-gradient( rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.85)), url("../../images/g01.jpg");
 				background-position: center, center;
 				background-repeat: repeat, no-repeat;
 				background-size: auto, cover;
@@ -4650,7 +4727,7 @@ a.icon.alt2:hover:before {
 				}
 
 				#banner hr {
-					border-bottom-color: #ffffff;
+					border-bottom-color: #fff;
 				}
 
 				#banner header.major h1:after, #banner header.major h2:after, #banner header.major h3:after, #banner header.major h4:after, #banner header.major h5:after, #banner header.major h6:after {
@@ -4698,10 +4775,10 @@ a.icon.alt2:hover:before {
 
 				#banner:before {
 					pointer-events: none;
-					-moz-transition: opacity .75s ease-in-out .75s;
-					-webkit-transition: opacity .75s ease-in-out .75s;
-					-ms-transition: opacity .75s ease-in-out .75s;
-					transition: opacity .75s ease-in-out .75s;
+					-moz-transition: opacity .5s ease-in-out .5s;
+					-webkit-transition: opacity .5s ease-in-out .5s;
+					-ms-transition: opacity .5s ease-in-out .5s;
+					transition: opacity .5s ease-in-out .5s;
 					background: #333333;
 					content: '';
 					height: 100%;
@@ -4713,12 +4790,17 @@ a.icon.alt2:hover:before {
 				}
 				/*Banner timings*/
 				#banner > .content {
-				  -moz-transition: -moz-transform .25s ease-in-out;
-				  -webkit-transition: -webkit-transform .25s ease-in-out;
-				  -ms-transition: -ms-transform .25s ease-in-out;
-				  transition: transform .25s ease-in-out;
+				  -moz-transition: -moz-transform .45s ease-in-out;
+				  -webkit-transition: -webkit-transform .45s ease-in-out;
+				  -ms-transition: -ms-transform .45s ease-in-out;
+				  transition: transform .45s ease-in-out;
 				  position: relative;
-				  z-index: 1;
+					z-index: 1;
+					box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+					0 10px 10px rgba(0, 0, 0, 0.22);
+					background: rgba(0, 0, 0, .7);
+					padding: 1.1rem;
+					border-radius: 10px;
 				}
 
 					#banner > .content > :last-child {
@@ -4730,11 +4812,11 @@ a.icon.alt2:hover:before {
 				}
 
 				body.is-preload #banner > .content {
-					-moz-transform: translateY(0.75rem);
-					-webkit-transform: translateY(0.75rem);
-					-ms-transform: translateY(0.75rem);
-					transform: translateY(0.75rem);
-					opacity: 0;
+					-webkit-transition: opacity 2.0s ease-in;
+					-moz-transition: opacity 2.0s ease-in;
+					-o-transition: opacity 2.0s ease-in;
+					transition: 2.0s ease-in;
+					opacity: 1;
 				}
 
 				@media screen and (max-width: 1280px) {
