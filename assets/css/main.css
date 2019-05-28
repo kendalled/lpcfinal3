@@ -38,6 +38,9 @@ body {
 .stepimages {
 	max-width: 7rem;
 }
+#logo {
+	max-width: 20rem;
+}
 /*Google Button*/
 .gButton {
 	margin: 50px auto;
@@ -590,6 +593,9 @@ ul.check li>div {
 		display: none;
 	}
 
+}
+#ordering {
+	padding-top: 0 !important;
 }
 
 .ordering {
@@ -3191,6 +3197,12 @@ input, select, textarea {
 			.image.left img, .image.right img {
 				width: 100%
 			}
+			@media screen and (max-width: 480px) {
+				.image.left img,
+				.image.right img {
+					width: 120%
+				}
+			} 
 
 			@media screen and (min-width: 1200px){
 				.image.left img,
@@ -4441,7 +4453,9 @@ a.icon.alt2:hover:before {
 	}
 
 	@media screen and (max-width: 736px) {
-
+		#banner>.content{
+			margin-top: -5rem;
+		}
 		body {
 			padding-top: 44px;
 		}
