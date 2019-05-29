@@ -8,12 +8,14 @@
 	<title>Free Quote Request - Lapel Pins and Coins</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
-	<meta name="description" content="" />
+	<meta name="description" content="Lapel Pins and Coins makes getting a Free Quote simple. You're just a few clicks away from a custom lapel pin or challenge coin! Military, Sports Events, and Hobbyists love our customer service and speed." />
 	<meta name="keywords" content="" />
 	<link rel="stylesheet" href="assets/css/main.css" />
+	<link href="https://fonts.googleapis.com/css?family=Google+Sans:300,400&display=swap" rel="stylesheet" />
 	<link href="assets/css/filepond.css" rel="stylesheet">
 	<link href="assets/css/filepond-plugin-image-preview.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Google+Sans:300,300i,400,400i&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="assets/css/pikaday.css">
+
 	<link rel="icon" href="favicon.ico" type="image/x-icon" />
 </head>
 
@@ -66,24 +68,42 @@
 					<!-- Lapel Pin Selection -->
 					<!-- Hidden Lapel Pin Form -->
 					<div id="pinform">
+						
+
 						<h2 style="text-align: center;">Lapel Pin Quote Request</h2>
+						<ul class="actions fixed centered">
+							<li><a href="#" role="Google Login Button" class="button icon fa-google fit small" id="googleButton" onclick="googleLogin()">Login with
+									Google</a>
+							</li>
+							<li style="padding-top: .5rem;">or</li>
+							<li><a href="#" role="Email Login Button" class="button icon fa-envelope fit small" id="anonButton"
+									onclick="anonLogin()">Login with
+									Email</a>
+							</li>
+						</ul>
+						
+					
 						<form name="pinForm" action="https://formspree.io/kendallkj00@gmail.com" method="post" enctype="multipart/form-data">
-							<h4>Contact Info:</h4>
+							
 							<div class="row gtr-uniform">
+								
+									
+									<!-- First Name -->
+									<div class="col-12 col-12-xsmall pinContact">
+										<h4>Contact Info:</h4>
+										<input type="text" name="Full Name (Pin)" id="Pin-FullName" value="" placeholder="Full Name" required>
+									</div>
 
-								<!-- First Name -->
-								<div class="col-12 col-12-xsmall">
-									<input type="text" name="Full Name (Pin)" id="Pin-FullName" value="" placeholder="Full Name" required>
-								</div>
-
-								<!-- Email -->
-								<div class="col-6 col-12-xsmall">
-									<input type="email" name="Email (Pin)" id="Pin-email" value="" placeholder="Email" required>
-								</div>
-								<!-- Phone Number -->
-								<div class="col-6 col-12-xsmall">
-									<input type="tel" name="Phone (pin)" id="Pin-phone" value="" placeholder="Phone Number" required>
-								</div>
+									<!-- Email -->
+									<div class="col-6 col-12-xsmall pinContact">
+										<input type="email" name="Email (Pin)" id="Pin-email" value="" placeholder="Email" required>
+									</div>
+									<!-- Phone Number -->
+									<div class="col-6 col-12-xsmall pinContact">
+										<input type="tel" name="Phone (pin)" id="Pin-phone" value="" placeholder="Phone Number" required>
+									</div>
+								
+								
 
 								<!-- Break -->
 								<div class="col-12" style="padding-bottom: 2em;">
@@ -324,12 +344,21 @@
 									<h4>Design Notes (Optional):</h4>
 
 									<textarea name="Design Details (Lapel Pin)" id="Pin-message" placeholder="Enter your message" rows="4"></textarea>
-
+									
 								</div>
-								<h4>Reference Files:</h4>
+								
+								
 								<div class="col-12 col-12-xsmall nopadding">
+									<h4>Order Deadline:</h4>
+									<input type="text" name="date" id="datepicker" placeholder="Select a Date (Optional)">
+									<br />
+									<h4>Discount Code:</h4>
+									<input type="text" name="coupon" id="coupon" placeholder="Enter a Discount Code (Optional)" maxlength="10">
+									<br/>
+									<h4>Reference Files:</h4>
 									<input type="file" class="my-pond" name="filepond" id="filepond1" multiple />
 									<input type="text" id="hiddenlink" name="Link to file(s)" />
+									
 								</div>
 
 								<!-- Break -->
@@ -728,44 +757,7 @@
 
 				<!-- Mini Posts -->
 				<section id="ordering">
-					<header>
-						<h2>Submit a Free Quote Request & Receive:</h2>
-					</header>
-					<h3></h3>
-					<div class="col-7 col-12-medium">
-						<div class="row gtr-200">
-							<div class="col-4 col-12-xsmall">
-								<ul class="check">
-									<li>
-										<div>Enamel Etching</div>
-									</li>
-									<li>
-										<div>Custom Edges</div>
-									</li>
-								</ul>
-							</div>
-							<div class="col-4 col-12-xsmall">
-								<ul class="check">
-									<li>
-										<div>24/7 Support</div>
-									</li>
-									<li>
-										<div>Tracking Info</div>
-									</li>
-								</ul>
-							</div>
-							<div class="col-4 col-12-xsmall">
-								<ul class="check">
-									<li>
-										<div>Display Boxes</div>
-									</li>
-									<li>
-										<div>Lifetime Warranty</div>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
+					
 					<div class="testimonial">
 
 						<h3>Experience with Clients Big & Small.</h3>
@@ -791,6 +783,44 @@
 						</div>
 
 					</div>
+					<header>
+						<h2>Included with Every Order:</h2>
+					</header>
+					<h3></h3>
+					<div class="col-7 col-12-medium">
+						<div class="row gtr-200">
+							<div class="col-4 col-12-xsmall">
+								<ul class="check">
+									<li>
+										<div>Free artwork with unlimited revisions</div>
+									</li>
+									<li>
+										<div>Free full color proof and quote</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-4 col-12-xsmall">
+								<ul class="check">
+									<li>
+										<div>Free UPS or FedEx Shipping</div>
+									</li>
+									<li>
+										<div>24/7 Email & Phone Support</div>
+									</li>
+								</ul>
+							</div>
+							<div class="col-4 col-12-xsmall">
+								<ul class="check">
+									<li>
+										<div>Free individual packaging</div>
+									</li>
+									<li>
+										<div>Fast production to meet your deadline</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
 				</section>
 			</div>
 
@@ -801,6 +831,7 @@
 					<header>
 						<h2>We make ordering simple.</h2>
 					</header>
+					
 					<article class="ordering">
 						<div class="image">
 							<a href="#" title="Links to quote page."><img class="stepimages lazyload" data-src="images/PAPER.svg" alt="" /></a>
@@ -825,17 +856,17 @@
 						</div>
 						<div class="content">
 							<span>3</span>
-							<h3>Your items are shipped with speed & safety to your doorstep.</h3>
+							<h3>Your custom items are shipped with speed & safety.</h3>
 						</div>
 					</article>
 					<header>
 						<h2>Eligible for a Discount?</h2>
-						<h3>Mention it at checkout for your savings.</h3>
+						<h3>Click to apply it to your quote.</h3>
 					</header>
 					<section class="mini-posts small">
 						<article>
 							<div class="image">
-								<a href="#" title="Links to quote page.">
+								<a href="#" title="Links to quote page." id="discount20">
 									<picture>
 										<source type="image/webp" data-srcset="images/discount20.webp">
 										<source type="image/png" data-srcset="images/discount20.png">
@@ -851,7 +882,7 @@
 						</article>
 						<article>
 							<div class="image">
-								<a href="#" title="Links to quote page.">
+								<a href="#" title="Links to quote page." id="discount5">
 									<picture>
 										<source type="image/webp" data-srcset="images/discount5.webp">
 										<source type="image/png" data-srcset="images/discount5.png">
@@ -866,7 +897,7 @@
 						</article>
 						<article>
 							<div class="image">
-								<a href="#" title="Links to quote page.">
+								<a href="#" title="Links to quote page." id="discount10">
 									<picture>
 										<source type="image/webp" data-srcset="images/discount10.webp">
 										<source type="image/png" data-srcset="images/discount10.png">
@@ -882,7 +913,7 @@
 
 						<article>
 							<div class="image">
-								<a href="#" title="Links to quote page.">
+								<a href="#" title="Links to quote page." id="sameday">
 									<picture>
 										<source type="image/webp" data-srcset="images/discount5.webp">
 										<source type="image/png" data-srcset="images/discount5.png">
@@ -905,51 +936,65 @@
 		</div>
 	</div>
 
-	<!-- Footer -->
-	<footer id="footer">
-		<div class="inner">
-			<div class="content">
-				<section>
-					<header>
-						<h2>Navigation</h2>
-					</header>
-					<ul class="alt">
-						<li><a href="#" title="Links to lapel pins page.">Lapel Pins</a></li>
-						<li><a href="#" title="Links to challenge coins page.">Challenge Coins</a></li>
-						<li><a href="#" title="Links to keychains page.">Keychains</a></li>
-						<li><a href="quote.html" title="Links to quote page.">Free Quote</a></li>
-						<li><a href="privacy.html" title="Links to privacy policy.">Privacy Policy</a></li>
-					</ul>
-				</section>
+<footer id="footer">
+	<div class="inner">
+		<div class="content">
+			<section>
+				<header>
+					<img id="logo" src="images/lapel.png" alt="PNG Logo for Lapel Pins & Coins.">
+				</header>
+				<ul class="alt">
+					<li><a href="#">Frequently Asked Questions (F.A.Q)</a></li>
+					<li><a href="#">Ordering Process</a></li>
+					<li><a href="#">Shipping & Handling</a></li>
+					<li><a href="#">Design Gallery</a></li>
+					<li><a href="quote.html" title="Links to the free quote request form.">Sitemap</a></li>
+				</ul>
+			</section>
+			<section>
+				<header>
+					<h2>Navigation Links</h2>
+				</header>
+				<ul class="alt">
+					<li><a href="lapelpins" title="Links to lapel pins page."> Lapel Pins</a></li>
+					<li><a href="challengecoins" title="Links to challenge coins page.">Challenge Coins</a></li>
+					<li><a href="keychains" title="Links to keychains page.">Keychains</a></li>
+					<li><a href="quote" title="Links to quote page.">Free Quote</a></li>
+					<li><a href="privacy" title="Links to privacy policy.">Privacy Policy</a></li>
+				</ul>
+			</section>
 
-				<section>
-					<header>
-						<h2>Get in touch</h2>
-					</header>
-					<ul class="contact-icons">
-						<li class="icon fa-map-marker">
-							<address>
-								Lapel Pins and Coins<br />
-								Winter Park, FL 32792
-							</address>
-						</li>
-						<li class="icon fa-envelope">
-							<a href="mailto:info@lapelpinsandcoins.com" title="Drafts an email to us." target="_blank">info@lapelpinsandcoins.com</a>
-						</li>
-						<li class="icon fa-twitter">
-							<a href="https://twitter.com/LapelPinsCoins" title="Links to twitter page." rel="noopener" target="_blank">@LapelPinsCoins</a>
-						</li>
-						<li class="icon fa-phone">
-							<a href="tel:+18443954464" title="Calls our phone number.">+1 (844) 395-4464</a>
-						</li>
-					</ul>
-				</section>
-			</div>
-			<div class="copyright">
-				&copy; 2019 Lapel Pins and Coins, LLC. All rights reserved. Developed by: KJ
-			</div>
+
+			<section>
+				<header>
+					<h2>Get in touch</h2>
+				</header>
+				<ul class="contact-icons">
+					<li class="icon fa-map-marker">
+						<address>
+							Lapel Pins and Coins<br />
+							Winter Park, FL 32792
+						</address>
+					</li>
+					<li class="icon fa-envelope">
+						<a href="mailto:info@lapelpinsandcoins.com" title="Drafts an email to us."
+							target="_blank">info@lapelpinsandcoins.com</a>
+					</li>
+					<li class="icon fa-twitter">
+						<a href="https://twitter.com/LapelPinsCoins" title="Links to twitter page." rel="noopener"
+							target="_blank">@LapelPinsCoins</a>
+					</li>
+					<li class="icon fa-phone">
+						<a href="tel:+18443954464" title="Calls our phone number.">+1 (844) 395-4464</a>
+					</li>
+				</ul>
+			</section>
 		</div>
-	</footer>
+		<div class="copyright">
+			&copy; 2019 Lapel Pins and Coins, LLC. All rights reserved. Developed by: KJ
+		</div>
+	</div>
+</footer>
 
 	<!-- Scripts -->
 	<script src="assets/js/jquery.min.js"></script>
@@ -974,10 +1019,10 @@
 	
 	<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-storage.js"></script>
 
-	<!--<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>-->
+	<script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-auth.js"></script>
 
 	
-	<script>
+	<script defer>
 		// Your web app's Firebase configuration
 		var firebaseConfig = {
 			apiKey: "AIzaSyCbcK2d6g1p88qSuKP8NX_IalzEIYUcJ1k",
@@ -1011,7 +1056,15 @@
 
 		
 	</script>
-	<script src="assets/js/firebasestorage.min.js" async></script>
+	<script src="assets/js/pikaday.js"></script>
+	<script src="assets/js/pikaday.jquery.js"></script>
+	<script>
+		var picker = new Pikaday({
+			field: $('#datepicker')[0]
+		});
+	</script>
+	
+	<script defer src="assets/js/firebasestorage.min.js"></script>
 
 	
 
