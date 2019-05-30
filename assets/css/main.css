@@ -38,73 +38,15 @@ body {
 .stepimages {
 	max-width: 7rem;
 }
+.pinContact {
+	display: none;
+}
+
 #logo {
-	max-width: 20rem;
-}
-/*Google Button*/
-.gButton {
-	margin: 50px auto;
-	width: 185px;
-	height: 40px;
-	border-radius: 2px;
-	position: relative;
+	max-width: 280px;
+	height: auto;
 }
 
-.gButton .logoTile {
-	margin: -3px;
-}
-
-.gButton span {
-	font-family: 'Google Sans';
-	position: absolute;
-	color: white;
-	font-weight: 500;
-	font-size: 14px;
-	left: 50px;
-	padding-top: .5rem;
-	padding-bottom: 0;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-o-user-select: none;
-	user-select: none;
-	cursor: pointer;
-}
-
-.normal {
-	background: #4688f1;
-	box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
-	transition: 1s;
-}
-
-.normal:hover {
-	background: #376ad3;
-	box-shadow: 0 4px 5px 0 rgba(70, 136, 241, 0.14), 0 1px 10px 0 rgba(70, 136, 241, 0.14), 0 2px 4px -1px rgba(70, 136, 241, 0.14);
-	transition: 1s;
-}
-
-.disabled {
-	background: rgba(0, 0, 0, 0.08);
-	transition: 1s;
-}
-
-.disabled span {
-	color: rgba(0, 0, 0, 0.4);
-	transition: 1s;
-}
-
-.normal img:nth-child(2) {
-	opacity: 0;
-	transition: opacity 1s;
-	display: none;
-}
-
-.disabled img:nth-child(1) {
-	opacity: 0;
-	transition: opacity 1s;
-	display: none;
-}
-/*End google button*/
 #hiddenlink {
 	display: none;
 }
@@ -3200,7 +3142,10 @@ input, select, textarea {
 			@media screen and (max-width: 480px) {
 				.image.left img,
 				.image.right img {
-					width: 120%
+					width: 100%
+				}
+				.image.main1 img {
+					width: 120%;
 				}
 			} 
 
@@ -4639,7 +4584,7 @@ a.icon.alt2:hover:before {
 				background-position: center, center;
 				background-repeat: repeat, no-repeat;
 				background-size: auto, cover;
-				min-height: calc(75vh + 7rem);
+				min-height: calc(65vh + 7rem);
 				position: relative;
 				text-align: center;
 			}
