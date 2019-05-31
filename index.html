@@ -20,7 +20,7 @@
 	<!-- Header -->
 	<header id="header">
 		<div class="inner">
-			<a href="index"><img class="logo" src="images/lapel.png" alt="PNG Logo for Lapel Pins & Coins."></a>
+			<a href="index" id="logolink"><img class="logo" src="images/lapel.png" alt="PNG Logo for Lapel Pins & Coins."></a>
 			<nav id="nav">
 				<ul>
 
@@ -75,12 +75,12 @@
 			<div id="content">
 
 				<!-- Posts -->
-				<section>
+				<section >
 					<header>
 						<h2 style="font-size: 2.8rem;">Our Products</h2>
 						<p>Custom lapel pins, challenge coins, & more since 1999.</p>
 					</header>
-					<p id="target">For over 20 years, we at Lapel Pins and Coins have designed custom Pins, Challenge Coins, and
+					<p>For over 20 years, we at Lapel Pins and Coins have designed custom Pins, Challenge Coins, and
 						Keychains for tens of thousands of happy customers.<br/><br/>Our simple, straightforward ordering process allows you to
 						get the items you want customized and on-time.<br/><br/>Get started with a <a href="quote" title="Links to free quote request form." >Free Quote</a>, no commitment necessary.</p>
 					<section class="posts">
@@ -288,24 +288,7 @@
 								<div class="timestamp">Quantity: 226<br />1 day ago</div>
 							</div>
 						</article>
-						<article>
-							<div class="image">
-								<a href="quote" title="Links to quote page.">
-									<picture>
-										<source type="image/webp" data-srcset="images/keychain01.webp">
-										<source type="image/png" data-srcset="images/keychain01.png">
-										<img class="recent lazyload" data-src="images/keychain01.png" alt="" />
-									</picture>
-								</a>
-							</div>
-							<div class="content">
-								<a href="quote" title="Links to quote page.">Offset Printed Keychain</a>
-								<div class="timestamp">Quantity: 100<br />2 days ago</div>
-							</div>
-						</article>
-
-
-
+						
 							<article>
 								<div class="image">
 									<a href="#" title="Links to quote page.">
@@ -382,7 +365,7 @@
 						<li><a href="#">Ordering Process</a></li>
 						<li><a href="#">Shipping & Handling</a></li>
 						<li><a href="#">Design Gallery</a></li>
-						<li><a href="quote.html" title="Links to the free quote request form.">Sitemap</a></li>
+						<li><a href="quote" title="Links to the free quote request form.">Sitemap</a></li>
 					</ul>
 				</section>
 				<section>
@@ -440,7 +423,7 @@
 	<script>
 	$(".scrolly").click(function() {
      $('html, body').animate({
-         scrollTop: $("#target").offset().top
+         scrollTop: $("#main").offset().top
      }, 1000);
  });
 	</script>
