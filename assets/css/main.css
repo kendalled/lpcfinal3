@@ -276,7 +276,7 @@ ul.check li>div {
 }
 
 .quoteHeader {
-	text-align: center;
+	text-align: center !important;
 	margin-top: 1rem;
 }
 
@@ -382,13 +382,13 @@ ul.check li>div {
 .antiqueGold, .antiqueGoldp, .antiqueGoldkc {
 	background-image: url(https://i.imgur.com/GxOvJIe.png);
 }
-.antiqueSilver, .antiqueSilverp, #antiqueSilverkc {
+.antiqueSilver, .antiqueSilverp, .antiqueSilverkc {
 	background-image: url(https://i.imgur.com/7sNk5Sq.png);
 }
 .antiqueCopper, .antiqueCopperp, .antiqueCopperkc {
 	background-image: url(https://i.imgur.com/bmPo5g4.png);
 }
-.polishedGold, .polishedGoldp, .polishedGoldp {
+.polishedGold, .polishedGoldp, .polishedGoldkc {
 	background-image: url(https://i.imgur.com/tQXFAiG.png);
 }
 .polishedBlack, .polishedBlackp, .polishedBlackkc {
@@ -459,6 +459,13 @@ ul.check li>div {
 	-webkit-filter: none;
 	-moz-filter: none;
 	filter: none;
+}
+
+#checkout {
+	display: none;
+	list-style: none;
+	text-align: center;
+	justify-content: center;
 }
 
 .drinkcard-cc {
