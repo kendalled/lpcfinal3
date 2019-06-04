@@ -364,8 +364,9 @@
 						<li><a href="#">Frequently Asked Questions (F.A.Q)</a></li>
 						<li><a href="#">Ordering Process</a></li>
 						<li><a href="#">Shipping & Handling</a></li>
-						<li><a href="ordernow.html">Order Now</a></li>
+						
 						<li><a href="quote" title="Links to the free quote request form.">Sitemap</a></li>
+						<li><a id="ordernow" href="ordernow">Order Now</a></li>
 					</ul>
 				</section>
 				<section>
@@ -427,8 +428,27 @@
      }, 1000);
  });
 	</script>
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
 
-		
+
+	<script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-auth.js"></script>
+
+	<script>
+		// Your web app's Firebase configuration
+		var firebaseConfig = {
+			apiKey: "AIzaSyCbcK2d6g1p88qSuKP8NX_IalzEIYUcJ1k",
+			authDomain: "lapelpinsandcoins-5f3f1.firebaseapp.com",
+			databaseURL: "https://lapelpinsandcoins-5f3f1.firebaseio.com",
+			projectId: "lapelpinsandcoins-5f3f1",
+			storageBucket: "lapelpinsandcoins-5f3f1.appspot.com",
+			messagingSenderId: "796050314078",
+			appId: "1:796050314078:web:c5c37ba5e858c8ed"
+		};
+		// Initialize Firebase
+		firebase.initializeApp(firebaseConfig);
+
+	</script>
 </body>
 
 </html>
