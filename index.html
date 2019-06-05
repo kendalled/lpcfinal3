@@ -39,14 +39,14 @@
 	<!-- Banner -->
 	<section id="banner">
 		<div class="content">
-			
+
 				<header class="major">
 					<h1>Custom <span style="color: #1ea5ff;">Lapel Pins</span>, <span style="color: #ff9e18;">Challenge Coins</span>, &
 						More<br /> Shipped to your door.
 					</h1>
 
 					<p>Our support team and on-site artists make ordering a breeze.</p>
-					
+
 				</header>
 				<ul class="actions fixed centered">
 					<li><a href="#" title="Scrolls down to products section." class="button primary scrolly">Our Products</a></li>
@@ -61,8 +61,8 @@
 					<li><a href="tel:+18443954464" class="icon alt fa-phone" title="Phone Number Link" target="_blank"><span
 								class="label">Phone</span></a></li>
 				</ul>
-			
-			
+
+
 		</div>
 	</section>
 
@@ -77,7 +77,7 @@
 				<!-- Posts -->
 				<section >
 					<header>
-						<h2 style="font-size: 2.8rem;">Our Products</h2>
+						<h2 id="scrollme" style="font-size: 2.8rem;">Our Products</h2>
 						<p>Custom lapel pins, challenge coins, & more since 1999.</p>
 					</header>
 					<p>For over 20 years, we at Lapel Pins and Coins have designed custom Pins, Challenge Coins, and
@@ -151,7 +151,7 @@
 						</article>
 
 					</section>
-					
+
 					<div class="col-7 col-12-medium">
 						<h2>Included with Your Order:</h2>
 						<div class="row gtr-200">
@@ -242,12 +242,12 @@
 						<iframe title="About Video" width="640" height="360" data-src="https://www.youtube.com/embed/GwDGLVv2WB4"
 							class="lazyload" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture"
 							allowfullscreen></iframe>
-				
+
 					</div>
 					<header>
 						<h2>We make ordering simple.</h2>
 					</header>
-				
+
 					<article class="ordering">
 						<div class="image"><a href="quote" title="Links to quote page."><img class="stepimages lazyload"
 									data-src="images/PAPER.svg" alt="" /></a></div>
@@ -256,7 +256,7 @@
 							<h3>Submit a quote request or contact us to get started.</h3>
 						</div>
 					</article>
-				
+
 					<article class="ordering">
 						<div class="image"><a href="quote" title="Links to quote page."><img class="stepimages lazyload"
 									data-src="images/COMPUTER.svg" alt="" /></a></div>
@@ -265,7 +265,7 @@
 							<h3>Our team of designers will e-mail you a free art proof.</h3>
 						</div>
 					</article>
-				
+
 					<article class="ordering">
 						<div class="image"><a href="quote" title="Links to quote page."><img class="stepimages lazyload"
 									data-src="images/BOX.svg" alt="" /></a></div>
@@ -273,7 +273,7 @@
 							<span>3</span>
 							<h3>Your custom items are shipped with speed & safety.</h3>
 						</div>
-				
+
 					</article>
 				</section>
 
@@ -330,7 +330,7 @@
 								<div class="timestamp">Quantity: 226<br />1 day ago</div>
 							</div>
 						</article>
-						
+
 							<article>
 								<div class="image">
 									<a href="#" title="Links to quote page.">
@@ -351,7 +351,7 @@
 					</section>
 				</section>
 
-				
+
 
 			</div>
 		</div>
@@ -369,7 +369,7 @@
 						<li><a href="#">Frequently Asked Questions (F.A.Q)</a></li>
 						<li><a href="#">Ordering Process</a></li>
 						<li><a href="#">Shipping & Handling</a></li>
-						
+
 						<li><a href="quote" title="Links to the free quote request form.">Sitemap</a></li>
 						<li><a id="ordernow" href="ordernow">Order Now</a></li>
 					</ul>
@@ -386,8 +386,8 @@
 						<li><a href="privacy" title="Links to privacy policy.">Privacy Policy</a></li>
 					</ul>
 				</section>
-				
-				
+
+
 				<section>
 					<header>
 						<h2>Get in touch</h2>
@@ -418,7 +418,7 @@
 	</footer>
 
 	<!-- Scripts -->
-	
+
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.dropotron.min.js"></script>
 	<script src="assets/js/browser.min.js"></script>
@@ -429,31 +429,11 @@
 	<script>
 	$(".scrolly").click(function() {
      $('html, body').animate({
-         scrollTop: $("#main").offset().top
-     }, 1000);
+         scrollTop: $("#scrollme").offset().top
+     }, 800);
  });
 	</script>
-	<!-- The core Firebase JS SDK is always required and must be listed first -->
-	<script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js"></script>
 
-
-	<script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-auth.js"></script>
-
-	<script>
-		// Your web app's Firebase configuration
-		var firebaseConfig = {
-			apiKey: "AIzaSyCbcK2d6g1p88qSuKP8NX_IalzEIYUcJ1k",
-			authDomain: "lapelpinsandcoins-5f3f1.firebaseapp.com",
-			databaseURL: "https://lapelpinsandcoins-5f3f1.firebaseio.com",
-			projectId: "lapelpinsandcoins-5f3f1",
-			storageBucket: "lapelpinsandcoins-5f3f1.appspot.com",
-			messagingSenderId: "796050314078",
-			appId: "1:796050314078:web:c5c37ba5e858c8ed"
-		};
-		// Initialize Firebase
-		firebase.initializeApp(firebaseConfig);
-
-	</script>
 </body>
 
 </html>
