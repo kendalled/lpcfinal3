@@ -147,7 +147,7 @@ ul.check li>div {
 }
 .testimonial {
 	background: linear-gradient(#ff9e18, #ef6c00);
-	max-width: 51rem;
+	max-width: 100%;
 	border-radius: 10px;
 	padding: 2.2rem;
 	margin: 2.2rem auto;
@@ -254,54 +254,32 @@ ul.check li>div {
 	border-radius: 6px;
 	background-color: #fff;
 	padding: 2rem 2.5rem 3rem 2.5rem !important;
+	max-width: 70em;
 	height: auto;
 }
 
-.paddingonlyleft {
-	padding-top: 0 !important;
-
-}
-
-#pinform, #coinform, #chainform, #rstbtn, #shrinkbtn {
+#pinform, #coinform, #chainform, #rstbtn {
 	display: none;
 }
-@media screen and (max-width: 1200px) {
-	#expndbtn {
-		display: none;
-	}
-}
 
-#shrinkbtn, #expndbtn {
-	width: 88%;
-}
-
-.quoteHeader {
-	text-align: center !important;
-	margin-top: 1rem;
-}
-
-#functionBtns {
-	margin-bottom: 0;
-}
-
-#coinPlating, #coinSizing, #bezelChoice, #packaging, #pinSizing, #pinPlating, #pinBacking, #pinPackaging, #chainSizing, #chainPlating, #chainPackaging {
+#coinPlating, #coinSizing, #bezelChoice, #packaging, #pinSizing, #pinPlating, #pinBacking, #pinPackaging {
 	display: none;
 	margin: 0 auto;
 }
 
-.poly, .polyp, .polykc {
+.poly, .polyp {
 	background-image: url(../../images/quote/poly.jpg);
 
 }
-.velvet, .velvetp, .velvetkc {
+.velvet, .velvetp {
 	background-image: url(../../images/quote/velvet.jpg);
 
 }
-.velvetCase, .velvetCasep, .velvetCasekc {
+.velvetCase, .velvetCasep {
 	background-image: url(../../images/quote/velvetcase.jpg);
 
 }
-.acrylicCase, .acrylicCasep, .acrylicCasekc {
+.acrylicCase, .acrylicCasep {
 	background-image: url(../../images/quote/acryliccase.jpg);
 
 }
@@ -323,7 +301,9 @@ ul.check li>div {
 .bezeled {
 	background-image: url(../../images/quote/bezeled.png);
 }
-
+.plain {
+	background-image: url(../../images/quote/plainedge.png);
+}
 
 .butterfly {
 	background-image: url(../../images/quote/butterfly.png);
@@ -348,20 +328,19 @@ ul.check li>div {
 .jewelry {
 	background-image: url(../../images/quote/jewelry.png)
 }
-
-.size075p, .size075kc {
+.size075p {
 	background-image: url(../../images/quote/size150.png);
 }
-.size175, .size175p, .size175kc {
+.size175, .size175p {
 	background-image: url(../../images/quote/size175.png);
 }
-.size200, .size200p, .size200kc {
+.size200, .size200p {
 	background-image: url(../../images/quote/size200.png);
 }
-.size225, .size225p, .size225kc {
+.size225, .size225p {
 	background-image: url(../../images/quote/size225.png);
 }
-.size250, .size250p, .size250kc {
+.size250, .size250p {
 	background-image: url(../../images/quote/size250.png);
 }
 .size275 {
@@ -371,36 +350,34 @@ ul.check li>div {
 	background-image: url(../../images/quote/size300.png);
 }
 
-.polishedSilver, .polishedSilverp, .polishedSilverkc{
+.polishedSilver, .polishedSilverp{
 	background-image: url(https://i.imgur.com/LIvrnPe.png);
 }
-.polishedCopper,
-.polishedCopperp,
-.polishedCopperkc {
+.polishedCopper, .polishedCopperp {
 	background-image: url(https://i.imgur.com/T9BDa2h.png);
 }
-.antiqueGold, .antiqueGoldp, .antiqueGoldkc {
+.antiqueGold, .antiqueGoldp {
 	background-image: url(https://i.imgur.com/GxOvJIe.png);
 }
-.antiqueSilver, .antiqueSilverp, .antiqueSilverkc {
+.antiqueSilver, .antiqueSilverp {
 	background-image: url(https://i.imgur.com/7sNk5Sq.png);
 }
-.antiqueCopper, .antiqueCopperp, .antiqueCopperkc {
+.antiqueCopper, .antiqueCopperp {
 	background-image: url(https://i.imgur.com/bmPo5g4.png);
 }
-.polishedGold, .polishedGoldp, .polishedGoldkc {
+.polishedGold, .polishedGoldp {
 	background-image: url(https://i.imgur.com/tQXFAiG.png);
 }
-.polishedBlack, .polishedBlackp, .polishedBlackkc {
+.polishedBlack, .polishedBlackp {
 	background-image: url(https://i.imgur.com/eW1VAxD.png);
 }
-.dual, .dualp, .dualkc {
+.dual, .dualp {
 	background-image: url(https://i.imgur.com/eoE9lXl.png);
 }
-.polishedNickel, .polishedNickelp, .polishedNickelkc {
+.polishedNickel, .polishedNickelp {
 	background-image: url(https://i.imgur.com/Aqdej64.png);
 }
-.colorCoated, .colorCoatedp, .colorCoatedkc {
+.colorCoated, .colorCoatedp {
 	background-image: url(https://i.imgur.com/JqA4zZu.png);
 }
 
@@ -461,13 +438,6 @@ ul.check li>div {
 	filter: none;
 }
 
-#checkout {
-	display: none;
-	list-style: none;
-	text-align: center;
-	justify-content: center;
-}
-
 .drinkcard-cc {
 	cursor: pointer;
 	background-size: contain;
@@ -491,30 +461,26 @@ ul.check li>div {
 	position: relative;
 	display: inline-block;
 }
-#coinSizing p, #pinSizing p, #chainSizing p {
+#coinSizing p, #pinSizing p {
 	color: #444;
 	font-size: .8rem;
 	padding: 0 0 0 2rem;
 }
-#colorChoice p, #bezelChoice p, #packaging p, #pinPackaging p, #pinBacking p, #chainPackaging p {
+#colorChoice p, #bezelChoice p, #packaging p, #pinPackaging p, #pinBacking p {
 	color: #444;
 	font-size: .8rem;
 	padding: 0 0 0 .5rem;
 }
-#coinPlating p, #pinPlating p, #chainPlating p {
+#coinPlating p, #pinPlating p {
 	color: #444;
 	font-size: .75rem;
 	padding: 0 0 0 .25rem;
 }
 
-#styleChoice p, #chainStyle p {
+#styleChoice p {
 	color: #333;
 	font-size: .85rem;
 	padding: 0 0 0 .75rem;
-}
-
-#logolink {
-	max-height: 5rem;
 }
 
 .tooltip .tooltiptext {
