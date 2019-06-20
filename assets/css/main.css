@@ -38,16 +38,146 @@ body {
 .stepimages {
 	max-width: 7rem;
 }
-.pinContact {
-	display: none;
+#discount5, #discount20, #discount10 {
+	max-width: 20px;
+	height: auto;
 }
+
+/* start step card */
+.container {
+    font-size: 21px;
+    line-height: 1.5;
+	margin: 0 auto;
+	max-width: 350px;
+}
+.inner-container {
+  position: relative;
+  max-width: 350px;
+  min-width: 280px;
+  height: 300px;
+  width: 100%;
+  margin: 0;
+}
+.contenty {
+  font-family: 'Google Sans', sans-serif;
+
+  position: absolute;
+  opacity: 0;
+  top: 2em;
+  left: 10%;
+  width: 80%;
+  margin: 0 auto;
+}
+.activey {
+  display: block !important;
+  margin: 0 auto;
+  opacity: 1;
+  transition: ease-in-out .5s;
+}
+.card {
+  position: relative;
+  background: #fff;
+  border-radius: 5px;
+  padding: 2em 0;
+  height: 300px;
+  box-sizing: border-box;
+  transition: 0.3s ease;
+  box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.35);
+}
+.card:first-child, .card:nth-child(2) {
+  background: #ff9e18;
+  height: 8px;
+  border-radius: 5px 5px 0 0;
+  padding: 0;
+  box-shadow: none;
+}
+.card:first-child {
+  margin: 0 20px;
+  background: #002d5d;
+}
+.card:nth-child(2) {
+  margin: 0 10px;
+}
+.card .progress-container {
+  background: rgba(37, 117, 252, 0.2);
+  height: 6px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  border-radius: 0 0 5px 5px;
+}
+.card .progress-container .step {
+  background-color: #2575fc;
+  height: 6px;
+  width: 33%;
+  border-radius: 0 0 0 5px;
+}
+.contenty h1 {
+  font-weight: 500;
+  font-size: 2rem;
+  color: #1f1f1f;
+  margin: 0;
+}
+.contenty p {
+  
+  font-size: 1rem;
+  padding: 2rem 0 1rem 0;
+  margin: 1rem 0 0 0;
+}
+.advance {
+  
+  float: right;
+}
+.advance:hover {
+	background-color: #002d5d;
+}
+
+.advance:focus {
+	outline: 0 !important;
+}
+/* end step card */
+
+#testimonials{
+	width: 75%;
+	max-height: 7rem;
+	padding: .75rem 1rem .1rem .25rem;
+
+	-moz-border-radius:12px;
+	-webkit-border-radius:12px;
+	border-radius:6px;
+	margin: 0.5rem auto 1.5rem auto;
+	
+}
+#testimonials li, #logoutbtn { 
+  display:none;
+}
+#testimonials ul{
+  list-style:none;
+}
+#testimonials p.author{
+	  color: #fff;
+    font-size: 16px;
+    font-style: italic;
+    text-align: right;
+	  margin-top: -2rem;
+}
+#testimonials p.author a,
+#testimonials p.author a:hover,
+#testimonials p.author a:visited{
+	color:#888;
+}
+ #testimonials blockquote {
+	 color: #fff;
+ }
+
 
 #logo {
 	max-width: 280px;
 	height: auto;
 }
 
-#hiddenlink, #shippingInfo {
+#hiddenlink, #shippingInfo, #hiddenlink2 {
 	display: none;
 }
 .nopadding {
@@ -158,8 +288,8 @@ ul.check li>div {
 	background: linear-gradient(#ff9e18, #ef6c00);
 	max-width: 51rem;
 	border-radius: 10px;
-	padding: 2.2rem;
-	margin: 2.2rem auto;
+	padding: 1.7rem;
+	margin: 1rem auto;
 	justify-content: center;
 	height: 32rem;
 	display: none;
@@ -198,6 +328,7 @@ ul.check li>div {
 	text-align: center;
 	color: #fff;
 	font-size: 1.5rem;
+	margin-bottom: 0;
 }
 
 .testimonial blockquote b{
@@ -246,6 +377,12 @@ ul.check li>div {
 	justify-content: center;
 	text-align: center;
 }
+#checkback {
+	background: rgba(255, 255, 255, 0.94);
+	padding: 1rem 1rem 0 1.75rem; 
+	border-radius: 12px;
+	margin-top: .5rem;
+}
 
 .imgbtns li {
 		display: inline-block;
@@ -259,8 +396,11 @@ ul.check li>div {
 .imgbtns li > input:hover {
 	transform: scale(1.15);
 }
+.imgbtns li > input:focus {
+	outline: 0;
+}
 
-#quoteform {
+#quoteform{
 	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12),
 	0 1px 2px rgba(0, 0, 0, 0.24);
 	border-radius: 6px;
@@ -290,7 +430,7 @@ ul.check li>div {
 
 .quoteHeader {
 	text-align: center !important;
-	margin-top: 1rem;
+	margin: 1rem 0 0 0;
 }
 
 #functionBtns {
@@ -540,7 +680,7 @@ ul.check li>div {
 	-moz-filter: none;
 	filter: none;
 }
-#loginButton, #hiddenForm1, #pinsubmit {
+#loginButton, #hiddenForm1, #pinsubmit, #hiddenForm2, .pinContact, .coinContact, #coinsubmit {
 	display: none;
 }
 #checkout {
@@ -946,15 +1086,27 @@ body.is-preload #banner2 > .content {
 	padding: 2em;
 	height: auto;
 	max-height: 37em;
-	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: all 0.2s cubic-bezier(.25,.8,.25,1);
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -ms-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -o-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 	justify-content: center;
 	text-align: center;
 	max-width: 25rem;
 }
 @media screen and (min-width: 1280px) {
 	.custom:hover {
-		box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+		-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 	}
 }
 
@@ -1258,7 +1410,7 @@ input, select, textarea {
 	}
 
 	blockquote {
-		border-left-color: #e0e0e0;
+		border-left-color: #1ea5ff;
 	}
 
 	code {
@@ -2823,6 +2975,7 @@ input, select, textarea {
 			padding-left: 1rem;
 		}
 
+
 		input[type="submit"].small,
 		input[type="reset"].small,
 		input[type="button"].small,
@@ -2898,7 +3051,7 @@ input, select, textarea {
 	.button {
 		box-shadow: none;
 		background-color: #002d5d;
-		color: #ffffff !important;
+		color: #ffffff;
 	}
 
 		input[type="submit"]:hover,
@@ -4436,7 +4589,7 @@ a.icon.alt2:hover:before {
 						padding: 0.75rem 1rem;
 						text-decoration: none;
 						border-radius: 12px;
-						font-weight: 550;
+						font-weight: 400;
 					}
 
 					#header nav > ul > li:nth-last-child(2) a {
