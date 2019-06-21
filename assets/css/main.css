@@ -38,8 +38,8 @@ body {
 .stepimages {
 	max-width: 7rem;
 }
-#discount5, #discount20, #discount10 {
-	max-width: 20px;
+#discount5, #discount20, #discount10, #sameday, .noUL {
+	text-decoration: none;
 	height: auto;
 }
 
@@ -79,10 +79,11 @@ body {
   background: #fff;
   border-radius: 5px;
   padding: 2em 0;
-  height: 300px;
+  height: 290px;
   box-sizing: border-box;
   transition: 0.3s ease;
   box-shadow: 0 3px 10px -2px rgba(0, 0, 0, 0.35);
+  
 }
 .card:first-child, .card:nth-child(2) {
   background: #ff9e18;
@@ -142,11 +143,12 @@ body {
 	width: 75%;
 	max-height: 7rem;
 	padding: .75rem 1rem .1rem .25rem;
-
+	background: rgba(255, 255, 255, 0.93);
 	-moz-border-radius:12px;
 	-webkit-border-radius:12px;
 	border-radius:6px;
 	margin: 0.5rem auto 1.5rem auto;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 	
 }
 #testimonials li, #logoutbtn { 
@@ -156,7 +158,7 @@ body {
   list-style:none;
 }
 #testimonials p.author{
-	  color: #fff;
+	  color: #777;
     font-size: 16px;
     font-style: italic;
     text-align: right;
@@ -168,7 +170,7 @@ body {
 	color:#888;
 }
  #testimonials blockquote {
-	 color: #fff;
+	 color: #1f1f1f;
  }
 
 
@@ -233,7 +235,8 @@ ul.check li>div {
 
 .platinglist {
 	list-style: none;
-
+	text-align: center;
+	padding: 0 !important;
 }
 #designs {
 	background: #fff;
@@ -294,10 +297,16 @@ ul.check li>div {
 	height: 32rem;
 	display: none;
 }
+#testimonial {
+	max-height: 26.3rem;
+	margin-top: 1rem;
+}
+
 @media screen and (min-width: 1280px){
 	.testimonial {
 		display: block;
 	}
+	
 	.buttonC {
 	white-space: nowrap;
 	display: inline-block;
@@ -338,12 +347,13 @@ ul.check li>div {
 	display: block;
 	padding: 2.5rem 2.5rem 1.5rem 2rem;
 	background-color: #fff;
-	border-radius: 10px;
+	border-radius: 6px;
+	margin-top: 1rem;
 }
 .customer-logo-link:hover .buttonC {
 	
 	opacity: 1;
-	transform: translate(-23em, .1em);
+	transform: translate(-24.5em, .1em);
 }
 .customer-logo-link:hover .list {
 	opacity: 0.7;
@@ -378,10 +388,11 @@ ul.check li>div {
 	text-align: center;
 }
 #checkback {
-	background: rgba(255, 255, 255, 0.94);
-	padding: 1rem 1rem 0 1.75rem; 
-	border-radius: 12px;
+	background: rgba(255, 255, 255, 0.92);
+	padding: 1rem;
+	border-radius: 6px;
 	margin-top: .5rem;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .imgbtns li {
@@ -408,6 +419,7 @@ ul.check li>div {
 	padding: 2rem 2.5rem 3rem 2.5rem !important;
 	height: auto;
 	border-top: solid 6px #002d5d !important;
+	margin-bottom: 2.5rem;
 }
 
 .paddingonlyleft {
@@ -611,6 +623,7 @@ ul.check li>div {
 	color: white !important;
 }
 
+
 /*tabs*/
 /* Style the tab */
 .tab {
@@ -772,38 +785,7 @@ ul.check li>div {
 	visibility: visible;
 }
 
-/* END SPOTLIGHT */
-.ordering span {
-	background-color: #002d5d;
-	border-radius: 100%;
-	color: #fff;
-	font-size: 1.5rem;
-	padding: .2rem .75rem;
-	font-weight: 400;
-}
-.ordering:first-of-type span {
-	
-	padding: .2rem .9rem;
 
-}
-@media screen and (max-width: 580px){
-	#ordering {
-		display: none;
-	}
-
-}
-#ordering {
-	padding-top: 0 !important;
-}
-
-.ordering {
-	padding-bottom: 1.55rem !important;
-}
-.ordering h3{
-	font-weight: 300;
-	font-size: 1.1rem;
-	margin-top: 1rem;
-}
 /* Banner2 */
 
 #banner2 {
@@ -1030,9 +1012,23 @@ body.is-preload #banner2 > .content {
 .ulright {
 	float: right;
 }
+.nextbtn:after {
+	content: none;
+}
+
+#bordertop1 {
+	border-top: 2px solid #e0e0e0 !important;
+	
+	
+}
+#ordering {
+	padding-top: 2rem !important;
+	border-top: 2px solid #e0e0e0 !important;
+	margin: 0 0 0 0 !important;
+}
 
 .recent2 {
-	max-width: 9rem;
+	max-width: 4.5rem;
 	height: auto;
 }
 #choice h1 {
@@ -1265,6 +1261,12 @@ input, select, textarea {
 
 	p {
 		margin: 0 0 2rem 0;
+		
+	}
+	@media screen and (min-width: 1280px){
+		p {
+			font-size: 17px;
+		}
 	}
 
 	h1, h2, h3, h4, h5, h6 {
@@ -4133,7 +4135,7 @@ a.icon.alt2:hover:before {
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		border-bottom: 1px solid;
+		
 		margin-bottom: 3rem;
 		padding-bottom: 3rem;
 	}
@@ -4161,17 +4163,30 @@ a.icon.alt2:hover:before {
 		}
 
 	.mini-posts.small article {
-		margin-bottom: 2rem;
-		padding-bottom: 2rem;
+		margin-bottom: 2.1rem;
+		padding: 2rem;
+		background: #fff;
+		border-radius: 6px;
+		-webkit-transition: all 0.25s ease-in-out;
+  		-moz-transition: all 0.25s ease-in-out;
+  		-ms-transition: all 0.25s ease-in-out;
+  		-o-transition: all 0.25s ease-in-out;
+		  transition: all 0.25s ease-in-out;
+		box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+	}
+	.mini-posts.small article:hover {
+		-webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  -o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 	}
 
 		.mini-posts.small article .image {
 			margin-right: 2rem;
 		}
 
-		.mini-posts.small article:last-of-type {
-			padding-bottom: 0;
-		}
+		
 
 	.mini-posts.minimal article {
 		display: block;
@@ -5181,7 +5196,7 @@ a.icon.alt2:hover:before {
 	}
 
 		#sidebar > section {
-			border-top: solid 6px #002d5d;
+			border-top: 3px solid #e0e0e0;
 			margin-top: 4rem;
 			padding-top: 3rem;
 		}
@@ -5207,7 +5222,7 @@ a.icon.alt2:hover:before {
 				-webkit-justify-content: space-between;
 				-ms-justify-content: space-between;
 				justify-content: space-between;
-				border-top: solid 6px #002d5d;
+				border-top: 2px solid #e0e0e0;
 				margin-left: 0;
 				margin-top: 3rem;
 				min-width: 100%;
