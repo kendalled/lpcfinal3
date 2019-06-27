@@ -10,39 +10,25 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
 	<meta name="description" content="Lapel Pins and Coins has a simple, to the point terms of service. We have been a trusted seller for over 20 years. Read our terms of service and email support if you have any questions." />
 	<meta name="keywords" content="" />
-	<link rel="preconnect" href="https://staticxx.facebook.com" crossorigin/>
-	<link href="https://fonts.googleapis.com/css?family=Google+Sans:300,400&display=swap" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Google+Sans:300,400,500&display=swap" rel="stylesheet" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
 <body class="is-preload">
-
+	
 	<div id="fb-root"></div>
-	<script>
-		window.fbAsyncInit = function () {
-			FB.init({
-				appId: '841187142921837',
-				autoLogAppEvents: true,
-				xfbml: true,
-				version: 'v3.3'
-			});
-			FB.AppEvents.logPageView();
-		};
-
-		(function (d, s, id) {
-			var js, fjs = d.getElementsByTagName(s)[0];
-			if (d.getElementById(id)) return;
-			js = d.createElement(s); js.id = id;
-			js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
-			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));
-	</script>
-
-
-
-
-
-
+	
+	
+	<!-- Your customer chat code -->
+	<div class="fb-customerchat" attribution=setup_tool page_id="798403170541301" theme_color="#ff9e18"
+		logged_in_greeting="Hi! Lapel Pins and Coins here. Please let us know if you have any questions."
+		logged_out_greeting="Hi! Lapel Pins and Coins here. Please let us know if you have any questions.">
+	</div>
+	
+	
+	
+	
+	
 
 	<!-- Header -->
 	<header id="header">
@@ -50,27 +36,19 @@
 			<a href="index" id="logolink"><img class="logo" src="images/lapel.png" alt="PNG Logo for Lapel Pins & Coins."></a>
 			<nav id="nav">
 				<ul>
-					<li><a href="index">Home</a></li>
+			
 					<li>
-						<a href="#">Lapel Pins</a>
-						<ul>
-							<li><a href="#">Material & Sizing</a></li>
-
-							<li>
-								<a href="#">Our Pins</a>
-								<ul>
-									<li><a href="#">Magna tempus</a></li>
-									<li><a href="#">Etiam lorem facilis</a></li>
-									<li><a href="#">Veroeros consequat</a></li>
-									<li><a href="#">Dolore sed magna</a></li>
-									<li><a href="#">Nisl sed adipiscing</a></li>
-								</ul>
-							</li>
-							<li><a href="#">Pricing</a></li>
-						</ul>
+						<a href="lapelpins">Lapel Pins</a>
+			
 					</li>
 					<li><a href="challengecoins">Challenge Coins</a></li>
+					<li><a href="keychains">Keychains</a></li>
+			
 					<li><a href="quote">Free Quote</a></li>
+					<li>
+						<a href="account">My Account</a>
+					
+					</li>
 				</ul>
 			</nav>
 		</div>
@@ -113,11 +91,11 @@
 					</p>
 					<p>Lapel Pins & Coins thanks you for your business!</p>
 					<h2>Overview </h2>
-
+					
 					<p>Lapel Pins & Coins believes in superior customer service and we provide a quality guarantee with each order!
-
+					
 					These are the terms and conditions that governs all orders.
-
+					
 					Each order relies on you for important information to produce any specific custom products such as lapel pins, challenge
 					coins, Lanyards, badges, keychains and other various promotional products. As we work together each party has
 					responsibilities. We have included these responsibilities below.
@@ -172,7 +150,7 @@
 						deliveries nor be held responsible for delays in shipping which are beyond our control. These delays include but not
 						limited to inaccurate or undeliverable address information, U.S./Foreign Customs procedures, misrouting of your package
 						by shipping company or the unavailability of the addressee.
-
+						
 						*Additionally, there will be a shipping charge if the product is shipped to locations outside of the United States.
 						Legal ownership of any and all logos, trademarks and copyrights. By submitting your design to Lapel Pins & Coins, you
 						warrant that you have the legal right to reproduce (or have reproduced) any logos or other images associated with your
@@ -180,9 +158,9 @@
 						intellectual property rights.
 					</p>
 
+					
 
-
-
+	
 					<h2>Third Party Sites</h2>
 					<p>
 						Our Sites may contain links to social networking and other websites and mobile applications that are operated and controlled by third parties. While we try to link only to websites that share our standards and respect for privacy, we do not
@@ -199,15 +177,15 @@
 						continued use of the Sites and/or utilization of any Site benefits after this Terms of Service has been updated (and after advance notice for a major change) indicates your agreement and acceptance of the updated version of the Terms of Service.
 					</p>
 
-
+					
 
 				</section>
 
 
-
+				
 			</div>
 
-
+			
 
 		</div>
 	</div>
@@ -221,12 +199,11 @@
 							<img id="logo" src="images/lapel.png" alt="PNG Logo for Lapel Pins & Coins.">
 						</header>
 						<ul class="alt">
-							<li><a href="#">Frequently Asked Questions (F.A.Q)</a></li>
-							<li><a href="#">Ordering Process</a></li>
-							<li><a href="#">Shipping & Handling</a></li>
-
+							<li><a href="interior/faq">Frequently Asked Questions (F.A.Q)</a></li>
+							<li><a href="privacy" title="Links to privacy policy.">Privacy Policy</a></li>
+							<li><a href="tos" title="Links to terms of service">Terms of Service</a></li>
 							<li><a href="quote" title="Links to the free quote request form.">Sitemap</a></li>
-							<li><a id="ordernow" href="ordernow">Order Now</a></li>
+							<li><a id="ordernow" href="https://lapelpinsandcoins.com/order-now">Order Now</a></li>
 						</ul>
 					</section>
 					<section>
@@ -234,15 +211,16 @@
 							<h2>Navigation Links</h2>
 						</header>
 						<ul class="alt">
+							<li><a href="index" title="Links to home page">Home</a></li>
 							<li><a href="lapelpins" title="Links to lapel pins page."> Lapel Pins</a></li>
 							<li><a href="challengecoins" title="Links to challenge coins page.">Challenge Coins</a></li>
 							<li><a href="keychains" title="Links to keychains page.">Keychains</a></li>
 							<li><a href="quote" title="Links to quote page.">Free Quote</a></li>
-							<li><a href="privacy" title="Links to Terms of Service.">Terms of Service</a></li>
+		
 						</ul>
 					</section>
-
-
+		
+		
 					<section>
 						<header>
 							<h2>Get in touch</h2>
@@ -276,6 +254,29 @@
 
 
 	<!-- Scripts -->
+	<script>
+
+		window.fbAsyncInit = function () {
+			FB.init({
+				appId: '841187142921837',
+				autoLogAppEvents: true,
+				xfbml: true,
+				version: 'v3.3'
+			});
+			FB.AppEvents.logPageView();
+
+		};
+
+
+		(function (d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+
+	</script>
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/jquery.dropotron.min.js"></script>
 	<script src="assets/js/browser.min.js"></script>
@@ -283,7 +284,8 @@
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script src="assets/js/lazysizes.min.js" async></script>
-
+	
+	
 
 </body>
 
