@@ -9,7 +9,7 @@ Successor to: [lpcfinal](https://github.com/kendalled/lpcfinal "My third attempt
 - CSS3
 - jQuery 3.x
 - Breakpoints, scrolly, lazyloading, & more JS Libraries
-- WEBP with PNG fallback
+- WebP Support with PNG fallbacks
 
 # Features:
 - Serverless Contact Forms
