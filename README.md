@@ -1,5 +1,5 @@
 # lpcfinal3 - A Static Redesign of a Wordpress Mess.
-[Link to Website](https://lapelpinsandcoins.com "Custom Lapel Pins")
+[Custom Lapel Pins](https://lapelpinsandcoins.com "Custom Lapel Pins")
 
 >This site aims to have a 3.0s or lower TTI (Time to interactive) - as well as score extremely well in lighthouse and Google Rankings.
    
