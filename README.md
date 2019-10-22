@@ -1,19 +1,19 @@
 # A Static Redesign of a Wordpress Mess.
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[Custom Lapel Pins](https://lapelpinsandcoins.com/lapelpins "Custom Lapel Pins")
 
->This site aims to have a 3.0s or lower TTI (Time to interactive) - as well as score extremely well in lighthouse and Google Rankings.
+
+>This site aims to have a 3.0s or lower TTI (Time to interactive) - as well as score extremely well in lighthouse and Google Rankings for [Custom Lapel Pins](https://lapelpinsandcoins.com/lapelpins "Custom Lapel Pins").
    
   
 Successor to: [lpcfinal](https://github.com/kendalled/lpcfinal "My third attempt"), [lpcfinal2](https://github.com/kendalled/lpcfinal2 "My second attempt"), [LapelV2](https://github.com/kendalled/LapelV2 "My first attempt")
-# Technologies:
+## Technologies:
 - HTML5
 - CSS3
 - jQuery 3.x
 - Breakpoints, scrolly, lazyloading, & more JS Libraries
 - WebP Support with PNG fallbacks
 
-# Features:
+## Features:
 - Serverless Contact Forms
 - Google/Facebook/Email OAuth
 - Firebase Hosting
