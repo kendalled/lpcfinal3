@@ -26,10 +26,6 @@ Successor to: [lpcfinal](https://github.com/kendalled/lpcfinal "My third attempt
 --- | --- | --- | --- | --- | --- |
 Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ | 10+ ✔ |
 
-
-___
-
-
 ## Release Notes
 
 - __Version 1.2.0__ Interior Pages
